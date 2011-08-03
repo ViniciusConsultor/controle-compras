@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataTransformationsUserConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>Compras</Id>
+            <Name>Compras</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7kqUPOh29Uua+J8bAPaeMAAAAAAQAAAAQwBvAG0AcAByAGEAcwAAABBmAAAAAQAAIAAAAMpDVP9LLZ+3m5OAAtIBC7ETLMSLgN2CdZKNbAIMnl7eAAAAAA6AAAAAAgAAIAAAAGlJyEJl1+5K9TrrZAuvyn6Y/gWrGA9ltHyCbRl9l+CgEAAAAKP7KE8tqQBvZndm3DvQuSpAAAAAh8MWo7RZc6MQ3BqXL0TVNbtcEW8V2h9O5ZBAOMaCCJ0zhnlmAexwkvjaNjMpHpW/3pWSpQZSXKOpkh5R3UiQ1A==</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>Compras</Id>
+            <Name>Compras</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7kqUPOh29Uua+J8bAPaeMAAAAAAQAAAAQwBvAG0AcAByAGEAcwAAABBmAAAAAQAAIAAAAES1dqPeFRH44pU896d6SsoH+a2McAH3tO4HjH1VPJUMAAAAAA6AAAAAAgAAIAAAADdWRT5k7fRy3HrlJVrm2Tn7IFsNLJhawILkUXXB4Cz7EAAAAB76kXKyTjVq98/Tdh6+3YtAAAAAVJL/cwSawPOW3lpzNzR911ix/EZUddumQWAR81Jy7Q2KvSfhu1o79wHNxEa3PjRYqWOVQGjYXOHfo98UpcrAFQ==</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <OfflineMode>false</OfflineMode>
+      </Options>
+    </Configuration>
+  </Configurations>
+</DataTransformationsUserConfiguration>

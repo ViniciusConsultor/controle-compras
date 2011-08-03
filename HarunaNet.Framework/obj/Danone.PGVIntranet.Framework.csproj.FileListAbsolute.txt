@@ -1,0 +1,5 @@
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Framework\bin\Debug\Danone.PGVIntranet.Framework.dll
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Framework\bin\Debug\Danone.PGVIntranet.Framework.pdb
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Framework\obj\Debug\ResolveAssemblyReference.cache
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Framework\obj\Debug\Danone.PGVIntranet.Framework.dll
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Framework\obj\Debug\Danone.PGVIntranet.Framework.pdb

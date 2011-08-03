@@ -1,0 +1,165 @@
+﻿body
+{
+}
+
+.label
+{
+    /* Tamanho da fonte da Label */
+    font-size: 8pt; /* Fonte da Label em negrito */
+    font-weight: bold; /* Exibir a Label em Bloco */
+    width: 200pt;
+}
+.mensagem-vermelho
+{
+    color: #f00;
+    border: 0;
+}
+.textotitulos
+{
+    font-family: Verdana;
+    font-size: 8pt;
+}
+.textboxes
+{
+    font-family: Verdana;
+    font-size: 8pt;
+    border: solid 1px black;
+    width: 200pt;
+}
+.textboxnumerico
+{
+    font-family: Verdana;
+    font-size: 8pt;
+    border: solid 1px black;
+    width: 200pt;
+}
+.gridheader
+{
+    background-color: #bcbec0;
+    border-color: #bcbec0;
+    font-family: Verdana;
+    color: #231f20;
+    font-size: 10pt;
+    font-weight: bold;
+}
+.gridnormal
+{
+    background-color: #d1d3d4;
+    font-family: Verdana;
+    color: #000000;
+    font-size: 8pt;
+    text-align: left;
+}
+.divtitulo
+{
+    background-color: #bcbec0;
+    font-family: Verdana;
+    color: #231f20;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+.divNomeCompleto
+{
+    text-align: center;
+}
+
+.divBtnPesq
+{
+    margin-top: 10px;
+    float: right;
+}
+
+.somenteleitura
+{
+    border: solid 1px;
+    font-family: Verdana;
+    color: white;
+    background-color: blue;
+}
+.titulos
+{
+    border: solid 1px;
+    font-family: Verdana;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+.header
+{
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 8pt;
+    background-color: red;
+    color: white;
+}
+.normal
+{
+    font-family: verdana;
+    font-size: 8pt;
+    background-color: silver;
+    color: black;
+}
+.hover
+{
+    font-family: verdana;
+    font-size: 8pt;
+    background-color: green;
+    color: white;
+}
+.selected
+{
+    font-family: verdana;
+    font-size: 8pt;
+    background-color: blue;
+    color: white;
+}
+.AjaxLoader
+{
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
+    background-color: #0000FF;
+    z-index: 4000;
+    text-align: center;
+    position: absolute;
+}
+.lnkmenu
+{
+    text-decoration: none;
+    font-family: Verdana;
+    color: White;
+    font-weight: bold;
+}
+
+#dvSelModulo
+{
+    text-align: left;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+
+#dvPesqUsuario
+{
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+#dvLinha
+{
+    text-align: left;
+    width: 100%;
+    padding-bottom: 10px;
+}

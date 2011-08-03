@@ -1,0 +1,400 @@
+﻿body, th, td
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin-left: 40px;
+}
+
+body
+{
+    font-size: 62.5%;
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center; /* hack para o IE */
+    background: url(../imagens/backgroud_sistema.png) repeat-x;
+}
+
+select
+{
+    background-color: #fff;
+    color: #5f5c5c;
+    width: 340px;
+    height: 20px;
+    border: none;
+    text-align: left;
+    vertical-align: middle;
+    margin: 2px 0 2px 0;
+    padding: 1px 0px 1px 0px;
+}
+h2
+{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0px 5px 5px;
+    margin: auto;
+}
+
+#happer
+{
+    height: 550px;
+}
+#frame
+{
+    width: 960px;
+    top: 20px;
+    margin: 20px auto 5px auto;
+    text-align: left; /* "remédio" para o hack do IE */
+}
+.page
+{
+    margin: auto;
+}
+
+
+.header
+{
+    height: 90px;
+    width: 760px;
+    margin: 20px auto 80px auto;
+    text-align: left;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.logo
+{
+    background: url(../imagens/logo_haruna_outras_pgs.png) no-repeat;
+    margin: auto;
+    width: 154px;
+    height: 147px;
+    left: 100px;
+    float: left;
+}
+.menu
+{
+    margin: -3px auto auto auto;
+    color: White;
+    font-weight: bold;
+    width: 760px;
+}
+.sair
+{
+    float: left;
+    margin: 2px auto auto -130px;
+    color: White;
+    font-weight: bold;
+    width: 130px;
+}
+
+.sair a
+{
+     margin: 0px auto auto 15px;
+}
+.sair a:link
+{
+    color: white;
+}
+
+.sair a:visited
+{
+    color: white;
+}
+
+.sair a:hover
+{
+    color: white;
+}
+
+
+
+.loginDisplay
+{
+    float: left;
+    width: 330px;
+    font-size: 1.1em;
+    display: block;
+    text-align: justify;
+    margin: 50px auto 0 30px;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+    #conteudo
+    {
+        margin: 103px 0 15px 0; 
+        background-color: #dededd;
+    }
+.cont_pesq
+{
+    margin: 10px auto 5px auto;
+    text-align: left;
+    width: 750px;
+}
+
+#resultado
+{
+    padding: 5px auto;
+}
+
+.result_pesq
+{
+    margin: 10px auto 5px auto;
+    text-align: left;
+    width: 760px;
+}
+
+
+.result_pesq h2
+{
+    color: #dededd;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0px 5px 5px;
+    margin: auto;
+}
+.login
+{
+    margin: 20px auto;
+    text-align: left;
+    width: 240px;
+}
+
+#logado
+{
+    margin: 135px 0 0 0;
+    float: right;
+}
+
+.logoff
+{
+    margin: 170px 0 0 0;
+    float: right;
+}
+#tabela
+{
+    margin: 10px auto 0 30px;
+}
+.rodape
+{
+    overflow: hidden;
+    text-align: center;
+    clear: both;
+    width: 100%;
+    margin: 0px;
+    color: #dededd;
+    font-size: 10px;
+    font-weight: bold;
+}
+.rodape p
+{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    line-height: 1.3em;
+    font-size: 100%;
+}
+
+.numero
+{
+    background-color: #fff;
+    width: 80px;
+    height: 15px;
+    border: none;
+    text-align: left;
+    vertical-align: middle;
+    padding: 1px 10px 1px 0px;
+}
+
+
+.textboxes
+{
+    background-color: #fff;
+    width: 200px;
+    height: 15px;
+    border: none;
+    text-align: left;
+    vertical-align: middle;
+    padding: 2px 10px 2px 0px;
+}
+
+.combocombo
+{
+    background-color: #fff;
+    width: 210px;
+    height: 18px;
+    border: none;
+    text-align: left;
+    vertical-align: middle;
+    margin: 2px 0px 2px px;
+}
+
+.texto
+{
+    background-color: #ececeb;
+    width: 200px;
+    height: 15px;
+    border: none;
+    text-align: left;
+    vertical-align: middle;
+    padding: 2px 10px 2px 0px;
+}
+
+.labeltitulo
+{
+    color: #5f5c5c;
+}
+.label
+{
+    color: #fff;
+}
+
+
+ul.topnav
+{
+    list-style: none;
+    margin: 0px;
+    float: left;
+    width: 720px;
+}
+ul.topnav li
+{
+    /*float: left;     margin: 0px;     padding: 1px;     position: relative; /*--Declare X and Y axis base for sub navigation--     */ /*background: url(../imagens/btn_vermelho_1.png) no-repeat;     width: 110px;     height: 21px;*/
+    float: left;
+    margin: 0px;
+    padding: 1px;
+    position: relative; /*--Declare X and Y axis base for sub navigation--     */
+    background: url(../imagens/btn_vermelho_1.png) no-repeat;
+    width: 110px;
+    height: 21px;
+}
+ul.topnav li a
+{
+    padding: 2px 5px 2px 5px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    font-size: x-small;
+}
+ul.topnav li a:hover
+{
+    color: #ed9089;
+    background: url(../imagens/btn_vermelho_2.png) no-repeat;
+}
+ul.topnav li span
+{
+    /*--Drop down trigger styles--*/
+    width: 17px;
+    height: 35px;
+    float: left;
+    background: url(subnav_btn.gif) no-repeat center top;
+}
+ul.topnav li span.subhover
+{
+    background-position: center bottom;
+    cursor: pointer;
+}
+/*--Hover effect for trigger--*/
+ul.topnav li ul.subnav
+{
+    list-style: none;
+    position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+    left: 0;
+    top: 35px;
+    background: #333;
+    margin: 0;
+    padding: 0;
+    display: none;
+    float: left;
+    width: 170px;
+    border: 1px solid #111;
+}
+ul.topnav li ul.subnav li
+{
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #252525; /*--Create bevel effect--*/
+    border-bottom: 1px solid #444; /*--Create bevel effect--*/
+    clear: both;
+    width: 170px;
+}
+html ul.topnav li ul.subnav li a
+{
+    float: left;
+    width: 145px;
+    background: #333 url(dropdown_linkbg.gif) no-repeat 10px center;
+    padding-left: 20px;
+}
+html ul.topnav li ul.subnav li a:hover
+{
+    /*--Hover effect for subnav links--*/
+    background: #222 url(dropdown_linkbg.gif) no-repeat 10px center;
+}
+.clear
+{
+    clear: both;
+}
+
+
+ul.topnavadm
+{
+    list-style: none;
+    margin: 0px;
+    float: left;
+    width: 720px;
+}
+ul.topnavadm li
+{
+    /*float: left;     margin: 0px;     padding: 1px;     position: relative; /*--Declare X and Y axis base for sub navigation--     */ /*background: url(../imagens/btn_vermelho_1.png) no-repeat;     width: 110px;     height: 21px;*/
+    float: left;
+    margin: 0px;
+    padding: 1px 5px 1px 5px;
+    position: relative; /*--Declare X and Y axis base for sub navigation--     */
+    height: 21px;
+}
+ul.topnavadm li a
+{
+    padding: 2px 5px 2px 5px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    font-size: x-small;
+}
+ul.topnavadm li a:hover
+{
+    border-bottom: 3px solid #EA0000; /*background: url(../../library/img/btnmenu.png) no-repeat center top;*/
+}
+
+.mensagem-vermelho
+{
+    color: Red;
+    font-size: 9px;
+}

@@ -1,0 +1,82 @@
+﻿div.popup
+{
+	margin:0 auto;
+	position: fixed;
+	top: 50%;
+	background: #FFF;	
+	padding: 5px;
+	padding-top: 0px;
+	margin-left: 50%;
+	border-bottom: solid 3px #036;
+	text-align: left;
+	display: none;
+}
+
+div.popup h1
+{
+	height: 25px;
+	width: 100%;
+	margin-left: -5px;
+	margin-bottom: 4px;
+	background: url(../Images/bgHeaderGridInicio.png) no-repeat left top;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-left: 10px;
+	border-bottom: solid 3px #036;
+}
+
+div.popup h1 a
+{
+	width: 27px;
+	height: 30px;
+	position: absolute;	
+	right: 0px;
+	top: 0px;
+	text-indent: -2000px;
+	overflow: hidden;
+	background: url(../Images/btFecharPopup.png) no-repeat;
+}
+
+div.popup div.tamanho
+{
+    max-height:450px;
+    width:100%;
+    overflow-x:hidden;
+    overflow-y:scroll; 
+}
+
+div.mini_pop
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 188px;
+	border: solid 1px #0082B5;
+	border-left: solid 3px #0082B5;
+	padding: 2px;
+	padding-top: 0px;
+	background: #fff;
+}
+div.mini_pop h3
+{
+	width: 192px;
+	height: 20px;
+	margin: -2px;
+	background: url(../Images/bgHeaderMiniPop.png) no-repeat;
+	color: #fff;
+	font-size: 11px;
+	padding: 1px;
+	padding-left: 3px;	
+}
+
+div.desabilitar
+{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: url(../img/bgOff.png);	
+}

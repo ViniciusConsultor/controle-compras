@@ -1,0 +1,13 @@
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Danone.PGVIntranet.DataLayer.dll
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Danone.PGVIntranet.DataLayer.pdb
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Danone.PGVIntranet.Entities.dll
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Danone.PGVIntranet.Framework.dll
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Danone.PGVIntranet.Entities.pdb
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Danone.PGVIntranet.Framework.pdb
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.DataLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.DataLayer\obj\Debug\Danone.PGVIntranet.DataLayer.dll
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.DataLayer\obj\Debug\Danone.PGVIntranet.DataLayer.pdb

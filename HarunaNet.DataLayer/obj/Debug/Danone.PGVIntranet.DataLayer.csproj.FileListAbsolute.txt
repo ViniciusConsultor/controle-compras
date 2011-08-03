@@ -1,0 +1,17 @@
+C:\Users\Leandro\Desktop\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Danone.PGVIntranet.DataLayer.dll
+C:\Users\Leandro\Desktop\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Danone.PGVIntranet.DataLayer.pdb
+C:\Users\Leandro\Desktop\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Danone.PGVIntranet.Entities.dll
+C:\Users\Leandro\Desktop\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\Leandro\Desktop\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\Leandro\Desktop\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+C:\Users\Leandro\Desktop\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+C:\Users\Leandro\Desktop\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Danone.PGVIntranet.Entities.pdb
+C:\Users\Leandro\Desktop\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\Leandro\Desktop\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Users\Leandro\Desktop\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.xml
+C:\Users\Leandro\Desktop\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\Microsoft.Practices.ObjectBuilder.xml
+C:\Users\Leandro\Desktop\PGV-Intranet\Danone.PGVIntranet.DataLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Leandro\Desktop\PGV-Intranet\Danone.PGVIntranet.DataLayer\obj\Debug\Danone.PGVIntranet.DataLayer.dll
+C:\Users\Leandro\Desktop\PGV-Intranet\Danone.PGVIntranet.DataLayer\obj\Debug\Danone.PGVIntranet.DataLayer.pdb
+C:\Users\Leandro\Desktop\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\HarunaNet.Framework.dll
+C:\Users\Leandro\Desktop\PGV-Intranet\Danone.PGVIntranet.DataLayer\bin\Debug\HarunaNet.Framework.pdb

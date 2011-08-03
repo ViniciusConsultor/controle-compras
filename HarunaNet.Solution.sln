@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarunaNet.BusinessRules", "HarunaNet.BusinessRules\HarunaNet.BusinessRules.csproj", "{649D1B6F-47FC-4474-ABC0-5DD247E596C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarunaNet.DataLayer", "HarunaNet.DataLayer\HarunaNet.DataLayer.csproj", "{52008B3E-2CFA-410D-A121-27140C25CC67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarunaNet.Entities", "HarunaNet.Entities\HarunaNet.Entities.csproj", "{98263373-433E-4D65-91DC-9BB3C70E699B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarunaNet.Framework", "HarunaNet.Framework\HarunaNet.Framework.csproj", "{65270DB6-C71D-4ACA-A0B2-EBF96C84A76A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarunaNet.Reports", "HarunaNet.Reports\HarunaNet.Reports.csproj", "{41BF3AE6-BCDE-4C3E-BA9C-91DD89BC8A04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarunaNet.SisWeb", "HarunaNet.Website\HarunaNet.SisWeb.csproj", "{B32E52E1-D8D2-40D3-B70D-2A19345FD3AE}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 7
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = HarunaNet.BusinessRules\\HarunaNet.BusinessRules.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = HarunaNet.BusinessRules\\
+		SccProjectUniqueName2 = HarunaNet.DataLayer\\HarunaNet.DataLayer.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = HarunaNet.DataLayer\\
+		SccProjectUniqueName3 = HarunaNet.Entities\\HarunaNet.Entities.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = HarunaNet.Entities\\
+		SccProjectUniqueName4 = HarunaNet.Framework\\HarunaNet.Framework.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = HarunaNet.Framework\\
+		SccProjectUniqueName5 = HarunaNet.Reports\\HarunaNet.Reports.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = HarunaNet.Reports\\
+		SccProjectUniqueName6 = HarunaNet.Website\\HarunaNet.SisWeb.csproj
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = HarunaNet.Website\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{649D1B6F-47FC-4474-ABC0-5DD247E596C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{649D1B6F-47FC-4474-ABC0-5DD247E596C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{649D1B6F-47FC-4474-ABC0-5DD247E596C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{649D1B6F-47FC-4474-ABC0-5DD247E596C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52008B3E-2CFA-410D-A121-27140C25CC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52008B3E-2CFA-410D-A121-27140C25CC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52008B3E-2CFA-410D-A121-27140C25CC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52008B3E-2CFA-410D-A121-27140C25CC67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98263373-433E-4D65-91DC-9BB3C70E699B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98263373-433E-4D65-91DC-9BB3C70E699B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98263373-433E-4D65-91DC-9BB3C70E699B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98263373-433E-4D65-91DC-9BB3C70E699B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65270DB6-C71D-4ACA-A0B2-EBF96C84A76A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65270DB6-C71D-4ACA-A0B2-EBF96C84A76A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65270DB6-C71D-4ACA-A0B2-EBF96C84A76A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65270DB6-C71D-4ACA-A0B2-EBF96C84A76A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41BF3AE6-BCDE-4C3E-BA9C-91DD89BC8A04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41BF3AE6-BCDE-4C3E-BA9C-91DD89BC8A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41BF3AE6-BCDE-4C3E-BA9C-91DD89BC8A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41BF3AE6-BCDE-4C3E-BA9C-91DD89BC8A04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B32E52E1-D8D2-40D3-B70D-2A19345FD3AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B32E52E1-D8D2-40D3-B70D-2A19345FD3AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B32E52E1-D8D2-40D3-B70D-2A19345FD3AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B32E52E1-D8D2-40D3-B70D-2A19345FD3AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

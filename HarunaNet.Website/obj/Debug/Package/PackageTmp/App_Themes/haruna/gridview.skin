@@ -1,0 +1,13 @@
+﻿
+<asp:GridView runat="server" SkinID="HarunaGrid" 
+                Font-Name="Verdana" 
+                Font-Size="12pt" BackColor="#ffffff"
+                AlternatingRowStyle-BackColor="#dededd"
+                GridLines="None"
+                CellPadding="1" 
+                CellSpacing="3" >
+          
+    <RowStyle BackColor="#ececeb" />    
+    <HeaderStyle BackColor="White" ForeColor="#da251d" HorizontalAlign="Left" VerticalAlign="Middle" />
+       
+</asp:GridView>

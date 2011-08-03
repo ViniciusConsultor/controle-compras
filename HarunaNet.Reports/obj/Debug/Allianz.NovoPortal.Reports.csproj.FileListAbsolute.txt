@@ -1,0 +1,14 @@
+C:\HARVEST\Componentes\Allianz.NovoPortal.Reports\bin\Debug\Allianz.NovoPortal.Report.dll.config
+C:\HARVEST\Componentes\Allianz.NovoPortal.Reports\bin\Debug\Allianz.NovoPortal.Report.pdb
+C:\HARVEST\Componentes\Allianz.NovoPortal.Reports\bin\Debug\Allianz.NovoPortal.BE.dll
+C:\HARVEST\Componentes\Allianz.NovoPortal.Reports\bin\Debug\Allianz.NovoPortal.BLL.dll
+C:\HARVEST\Componentes\Allianz.NovoPortal.Reports\bin\Debug\Allianz.NovoPortal.DAL.dll
+C:\HARVEST\Componentes\Allianz.NovoPortal.Reports\bin\Debug\Allianz.Authentication.dll
+C:\HARVEST\Componentes\Allianz.NovoPortal.Reports\bin\Debug\Allianz.NovoPortal.DAL.pdb
+C:\HARVEST\Componentes\Allianz.NovoPortal.Reports\bin\Debug\Allianz.NovoPortal.BE.pdb
+C:\HARVEST\Componentes\Allianz.NovoPortal.Reports\bin\Debug\Allianz.NovoPortal.BLL.pdb
+C:\HARVEST\Componentes\Allianz.NovoPortal.Reports\obj\Debug\ResolveAssemblyReference.cache
+C:\HARVEST\Componentes\Allianz.NovoPortal.Reports\obj\Debug\RdlCompile.cache
+C:\HARVEST\Componentes\Allianz.NovoPortal.Reports\obj\Debug\RdlCompile.compiled
+C:\HARVEST\Componentes\Allianz.NovoPortal.Reports\obj\Debug\Allianz.NovoPortal.Report.dll
+C:\HARVEST\Componentes\Allianz.NovoPortal.Reports\obj\Debug\Allianz.NovoPortal.Report.pdb

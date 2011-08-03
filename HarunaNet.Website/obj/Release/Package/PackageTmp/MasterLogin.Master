@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterLogin.master.cs"
+    Inherits="HarunaNet.SisWeb.MasterLogin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link href="library/css/haruna.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="~/library/js/validacoes.js"></script>
+    <style type="text/css">
+        .AjaxLoader
+        {
+            width: 200px;
+            height: 200px;
+            top: 50%;
+            left: 50%;
+            margin-left: -100px;
+            margin-top: -100px;
+            background-color: #0000FF;
+            z-index: 4000;
+            text-align: center;
+            position: absolute;
+        }
+    </style>
+    <title>Sistema Pedidos de Compras</title>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="logo">
+            </div>
+            <div class="loginDisplay">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />Bem-Vindo ao Sistema de Pedidos Haruna.
+             </div>
+        </div>
+        <div class="hideSkiplink">
+            Entre com o login e senha e faça seu pedido
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+    </form>
+    <%--<form id="frmLogin" runat="server">
+    <div id="frame">
+        <div id="topo">
+            <div id="logo">
+            </div>
+        </div>
+        <div id="resultado">
+            <div id="login">
+                <table border="0" cellpadding="8" cellspacing="0" width="100%">
+                    <tr valign="top">
+                        <td style="height: 8px">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr valign="top">
+                                    <td style="height: 8px; text-align: left;">
+                                        <asp:Label ID="lbl_usuario" CssClass="labellogin" runat="server" Text="Usuário:"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td style="height: 8px; text-align: left;">
+                                        <asp:RequiredFieldValidator ID="rfvtbLogin" runat="server" ControlToValidate="tbLogin"
+                                            ValidationGroup="login" CssClass="mensagem-vermelho" Display="Dynamic" ErrorMessage="Login Obrigatório!"
+                                            ForeColor="" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                                        <asp:TextBox runat="server" CssClass="texto" ID="tbLogin"></asp:TextBox><br />
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td style="height: 8px; text-align: left;">
+                                        <span>Senha:</span>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td style="height: 8px; text-align: left;">
+                                        <asp:RequiredFieldValidator ID="rfvtbSenha" runat="server" ControlToValidate="tbSenha"
+                                            ValidationGroup="login" CssClass="mensagem-vermelho" Display="Dynamic" ErrorMessage="Senha Obrigatória!"
+                                            ForeColor="" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                                        <asp:TextBox runat="server" CssClass="texto" ID="tbSenha" TextMode="Password"></asp:TextBox>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div>
+                                <br />
+                                <asp:ImageButton runat="server" ID="btnLogin" ValidationGroup="login" ImageUrl="~/library/img/btnEntrar.png"
+                                    ToolTip="Clique aqui para fazer seu Login!" OnClick="btnLogin_Click" />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        &nbsp;</asp:ContentPlaceHolder>
+    <div class="footer">
+        Copyright © 2011 Haruna Serviços Administrativos - Todos os direitos reservados</div>
+    </form>--%>
+</body>
+</html>
