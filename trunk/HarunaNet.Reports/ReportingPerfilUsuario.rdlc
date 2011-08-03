@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <rd:DataSourceID>25b0fdf2-b9a0-4f91-a72c-4d1856cc31c0</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="P_Grupo">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_0</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>1.5cm</RightMargin>
+  <LeftMargin>1.5cm</LeftMargin>
+  <PageHeader>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Image Name="image1">
+        <Sizing>AutoSize</Sizing>
+        <Top>0.32937cm</Top>
+        <Width>2.69841cm</Width>
+        <MIMEType>image/gif</MIMEType>
+        <Source>Embedded</Source>
+        <Style />
+        <ZIndex>5</ZIndex>
+        <Left>13cm</Left>
+        <Height>0.68783cm</Height>
+        <Value>allianz_logo</Value>
+      </Image>
+      <Line Name="line3">
+        <Top>2.25cm</Top>
+        <Width>-17.24471cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <Left>17.25cm</Left>
+        <Height>0cm</Height>
+      </Line>
+      <Rectangle Name="rectangle1">
+        <ZIndex>3</ZIndex>
+        <ReportItems>
+          <Textbox Name="textbox1">
+            <rd:DefaultName>textbox1</rd:DefaultName>
+            <Top>0.06481cm</Top>
+            <Width>5.5cm</Width>
+            <Style>
+              <Color>White</Color>
+              <BackgroundColor>Navy</BackgroundColor>
+              <TextDecoration>Underline</TextDecoration>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.5cm</Left>
+            <Height>0.65873cm</Height>
+            <Value>=Parameters!P_Grupo.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox3">
+            <Width>2.57937cm</Width>
+            <Style>
+              <Color>White</Color>
+              <BackgroundColor>Navy</BackgroundColor>
+              <FontFamily>Arial Narrow</FontFamily>
+              <FontSize>12pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>8.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Usuários</Value>
+          </Textbox>
+          <Textbox Name="textbox46">
+            <Width>2cm</Width>
+            <Style>
+              <Color>White</Color>
+              <BackgroundColor>Navy</BackgroundColor>
+              <FontFamily>Arial Narrow</FontFamily>
+              <FontSize>12pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Height>0.63492cm</Height>
+            <Value>Grupo :</Value>
+          </Textbox>
+        </ReportItems>
+        <Top>2.34127cm</Top>
+        <Style>
+          <BackgroundColor>Navy</BackgroundColor>
+        </Style>
+      </Rectangle>
+      <Textbox Name="textbox20">
+        <rd:DefaultName>textbox20</rd:DefaultName>
+        <Top>1.5cm</Top>
+        <Style>
+          <BackgroundColor>LightGrey</BackgroundColor>
+          <FontFamily>Arial Narrow</FontFamily>
+          <FontSize>12pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>Perfil x Usuário</Value>
+      </Textbox>
+      <Line Name="line1">
+        <Top>1.35582cm</Top>
+        <Width>-17.24471cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <BorderWidth>
+            <Default>2pt</Default>
+          </BorderWidth>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <Left>17.25cm</Left>
+        <Height>0cm</Height>
+      </Line>
+      <Textbox Name="textbox17">
+        <rd:DefaultName>textbox17</rd:DefaultName>
+        <Width>5.5cm</Width>
+        <Style>
+          <FontFamily>Arial Narrow</FontFamily>
+          <FontSize>12pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>0.25cm</Left>
+        <Height>1.25cm</Height>
+        <Value>Relatório Perfil x Usuários
+ALLIANZ PORTAL</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>3.25cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageHeader>
+  <BottomMargin>1.5cm</BottomMargin>
+  <rd:ReportID>d5252226-ac35-414f-8df5-d899610f210e</rd:ReportID>
+  <EmbeddedImages>
+    <EmbeddedImage Name="allianz_logo">
+      <MIMEType>image/gif</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="Allianz_NovoPortal_Reports_ReportsPerfilUsuario">
+      <Fields>
+        <Field Name="NM_USUARIO">
+          <DataField>NM_USUARIO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Nome">
+          <DataField>Nome</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>Allianz.NovoPortal.Reports</rd:DataSetName>
+        <rd:TableName>ReportsPerfilUsuario</rd:TableName>
+        <rd:ObjectDataSourceType>Allianz.NovoPortal.Reports.ReportsPerfilUsuario, Allianz.NovoPortal.Report, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>17.25cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Table Name="table2">
+        <DataSetName>Allianz_NovoPortal_Reports_ReportsPerfilUsuario</DataSetName>
+        <Top>0.0119cm</Top>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Nome">
+                      <Style>
+                        <Color>White</Color>
+                        <BackgroundColor>LightGrey</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!Nome.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <TableColumns>
+          <TableColumn>
+            <Width>9cm</Width>
+          </TableColumn>
+        </TableColumns>
+        <Left>8.25cm</Left>
+      </Table>
+    </ReportItems>
+    <Height>0.64682cm</Height>
+  </Body>
+  <Language>en-US</Language>
+  <PageFooter>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Line Name="line4">
+        <Width>-17.24471cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <BorderWidth>
+            <Default>2pt</Default>
+          </BorderWidth>
+        </Style>
+        <Left>17.25cm</Left>
+        <Height>0cm</Height>
+      </Line>
+    </ReportItems>
+    <Height>0.25cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+  <TopMargin>1.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

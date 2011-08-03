@@ -1,0 +1,16 @@
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Website\bin\Danone.PGVIntranet.Website.dll
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Website\bin\Danone.PGVIntranet.Website.pdb
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Website\bin\Danone.PGVIntranet.BusinessRules.dll
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Website\bin\Danone.PGVIntranet.Entities.dll
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Website\bin\Danone.PGVIntranet.Framework.dll
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Website\bin\Danone.PGVIntranet.DataLayer.dll
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Website\bin\Danone.PGVIntranet.Entities.pdb
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Website\bin\Danone.PGVIntranet.DataLayer.pdb
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Website\bin\Danone.PGVIntranet.Framework.pdb
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Website\bin\Danone.PGVIntranet.BusinessRules.pdb
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Website\obj\Debug\ResolveAssemblyReference.cache
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Website\obj\Debug\Danone.PGVIntranet.Website.dll
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Website\obj\Debug\Danone.PGVIntranet.Website.pdb
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Website\bin\ASTreeView.dll
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Website\bin\ASTreeView.xml
+C:\Projetos\PGV-Intranet\Danone.PGVIntranet.Website\bin\AjaxControlToolkit.pdb

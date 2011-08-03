@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{649D1B6F-47FC-4474-ABC0-5DD247E596C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HarunaNet.BusinessRules</RootNamespace>
+    <AssemblyName>HarunaNet.BusinessRules</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CategoriaFacade.cs" />
+    <Compile Include="TipoDocumentoFacade.cs" />
+    <Compile Include="FornecedorFacade.cs" />
+    <Compile Include="GrupoFacade.cs" />
+    <Compile Include="ModuloFacade.cs" />
+    <Compile Include="PCompra_Facade.cs" />
+    <Compile Include="Ped_ItemFacade.cs" />
+    <Compile Include="Process\CategoriaProcess.cs" />
+    <Compile Include="Process\TipoDocumentoProcess.cs" />
+    <Compile Include="Process\FornecedorProcess.cs" />
+    <Compile Include="Process\GrupoProcess.cs" />
+    <Compile Include="Process\ItemProcess.cs" />
+    <Compile Include="Process\ModuloProcess.cs" />
+    <Compile Include="PedidoFacade.cs" />
+    <Compile Include="Process\PCompraProcess.cs" />
+    <Compile Include="Process\PedidoProcess.cs" />
+    <Compile Include="Process\PedItemProcess.cs" />
+    <Compile Include="Process\ProjetosProcess.cs" />
+    <Compile Include="Process\RamoProcess.cs" />
+    <Compile Include="ProjetosFacade.cs" />
+    <Compile Include="RamoFacade.cs" />
+    <Compile Include="UsuarioFacade.cs" />
+    <Compile Include="PerfilFacade.cs" />
+    <Compile Include="Process\PerfilProcess.cs" />
+    <Compile Include="Process\UsuarioProcess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ItemFacade.cs" />
+    <Compile Include="Validation\PedidoValidation.cs" />
+    <Compile Include="Validation\PedItemValidation.cs" />
+    <Compile Include="Validation\PerfilValidation.cs" />
+    <Compile Include="Validation\ProcessoCompraItemValidation.cs" />
+    <Compile Include="Validation\UsuarioValidation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HarunaNet.DataLayer\HarunaNet.DataLayer.csproj">
+      <Project>{52008B3E-2CFA-410D-A121-27140C25CC67}</Project>
+      <Name>HarunaNet.DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HarunaNet.Entities\HarunaNet.Entities.csproj">
+      <Project>{98263373-433E-4D65-91DC-9BB3C70E699B}</Project>
+      <Name>HarunaNet.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HarunaNet.Framework\HarunaNet.Framework.csproj">
+      <Project>{65270DB6-C71D-4ACA-A0B2-EBF96C84A76A}</Project>
+      <Name>HarunaNet.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,32 @@
+/ Obs / Não relacionei aqui as cores chapadas dos verlemlhos e cinzas que podem ser obtidas pelo conta-gotas do photoshop
+
+
+
+
+/ textos do btn vermelho /
+. entrar
+. pedidos
+. meus pedidos
+. contato
+
+
+
+
+/ cores do texto do botão vermelho e menu do administrador /
+. habilitado (#ffffff)
+. desabilitados (#ed9089)
+
+
+
+
+/ cores dos textos cinzas /
+. textos dentro dos formulários (#9f9f9e)
+. itens (#888685)
+. desabilitados (#d5d5d5) 
+. texto sobre o fundo branco (#dededd)
+
+
+
+
+/ cores dos textos vermelhos /
+. #da251d

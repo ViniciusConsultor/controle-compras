@@ -1,0 +1,210 @@
+﻿body, fieldset, img, p, h3, h2, h1, form, li, ol, ul {
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+body {
+	font-family: Verdana;
+	font-size: 11px;
+	color: #333;
+	text-decoration: none;
+}
+
+a{
+	color: #069;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+.rodape {
+    font-size: 9px;
+    font-weight: bold;
+    color: #006699;
+	text-decoration: none;
+	text-align: right;
+	padding-right: 8px
+}
+
+.sub-titulo {
+	font-size: 12px;
+	font-weight: bold;
+	color: #069;
+	white-space: nowrap;
+}
+
+.titulo {
+	font-size: 14px;
+	font-weight: bold;
+	color: #069;
+	white-space: nowrap;
+}
+
+.tb-acesso {
+	border: 1px solid #666;
+	margin: 10px 0 10px 0;
+}
+
+.tb-acesso th {
+	background-color: #fff;
+	color: #000;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.tb-acesso td {
+	height: 20px;
+}
+
+.tb-grid {
+	border: 1px solid #666;
+	margin: 10px 0 10px 0;
+}
+
+.tb-grid th {
+	background-color: #b4c9e9;
+	color: #fff;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.tb-grid th a{
+	color: White;
+	text-decoration: none;
+}
+
+.tb-grid th a:hover{
+	color: White;
+	text-decoration: underline;
+}
+
+.tb-grid td {
+	padding: 5px;
+}
+
+.tb-grid-row {
+	background-color: #fff;
+}
+
+.tb-grid-inativo {
+	background-color: #eee;
+	color: #ccc;
+}
+
+.tb-grid-vazio {
+	margin: 10px;
+	text-align: center;
+	color: #f00;
+}
+
+.tb-grid-paginacao {
+	text-align: center;
+}
+
+.mensagem-vermelho {
+	color: #f00;
+	border: 0;
+}
+
+.table-aux {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.campo {
+	border: 1px solid #069;
+	font-family: Verdana;
+	font-size: 11px;
+}
+
+.menu {
+	font-weight: bold;
+	color: #069;
+	line-height: 20px;
+}
+
+.sub-menu {
+	border: 0;
+	line-height: 25px;
+	padding: 0;
+}
+
+.sub-menu td {
+	background-color: #e8f7fd;
+	padding: 0px 0px 0px 5px;
+	width: 120px;
+	border: solid 1px #dbeaf9;
+}
+
+.sub-menu td td {
+	border: 0;
+	color: #158ce0;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.listaModulo {
+	text-decoration: none;
+	text-align: center;
+}
+
+.tb-dados {
+	margin: 10px 0 10px 0;
+	border: 1px solid #666;
+}
+
+.tb-dados th {
+	background-color: #b4c9e9;
+	color: #fff;
+	font-weight: bold;
+	height: 20px;
+}
+
+.tb-dados td {
+	height: 20px;
+	padding: 3px;
+}
+
+.tab {
+	margin-left : 0px;
+}
+ 
+.itemTab {
+	background: #e8f7fd;
+	color: #069;
+	font-weight: bold;
+
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+ 
+.selectedTab {
+	background: #b4c9e9;
+	color: #fff;
+	font-weight: bold;
+}
+ 
+.tab a:hover {
+	text-decoration: underline;  
+}
+
+.conteudoTab {
+	border-top : 1px solid #b4c9e9;
+	border-bottom : 1px solid #b4c9e9;
+	border-left : 1px solid #b4c9e9;
+	border-right : 1px solid #b4c9e9;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.itemMarcado {
+	background-color: #b4c9e9;	
+}
