@@ -43,7 +43,7 @@ namespace HarunaNet.SisWeb
             if (e.Row.RowType == DataControlRowType.DataRow)
             {
                 e.Row.Cells[0].HorizontalAlign = HorizontalAlign.Center;
-                if (((ProcessoCompra)(e.Row.DataItem)).Status == 4)
+                if (((ProcessoCompra)(e.Row.DataItem)).Status == 2)
                 {
                     e.Row.Cells[0].BackColor = System.Drawing.Color.FromArgb(255, 94, 94);
                     e.Row.Cells[0].ForeColor = System.Drawing.Color.WhiteSmoke;

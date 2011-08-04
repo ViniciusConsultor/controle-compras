@@ -63,7 +63,7 @@
                     </asp:GridView>
                     <asp:Label ID="lblMensagem" CssClass="mensagem-vermelho" runat="server" Text="" Visible="false"></asp:Label>
                     <br />
-                    <asp:Button ID="btn_Fechar" runat="server" Text="Fechar Processo de Compra" Width="100px"
+                    <asp:Button ID="btn_Fechar" runat="server" Text="Fechar" Width="100px"
                         OnClick="btn_Fechar_Click" />
                     &nbsp;<asp:Button ID="btn_Voltar" runat="server" Text="Voltar" Width="100px" OnClick="btn_Voltar_Click" />
                 </div>
