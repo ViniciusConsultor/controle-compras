@@ -54,7 +54,6 @@ namespace HarunaNet.SisWeb
         protected List<Ped_Item> SalvaItens()
         {
 
-
             List<Ped_Item> ListaPedItens = new List<Ped_Item>();
 
             foreach (GridViewRow item in gvListaPCompraItens.Rows)
@@ -94,30 +93,64 @@ namespace HarunaNet.SisWeb
 
         protected void btn_Fechar_Click(object sender, EventArgs e)
         {
-            List<Ped_Item> ListaPedItens = SalvaItens();
-            if (ListaPedItens.Count > 0)
+
+            try
             {
                 Resultado resultado = new Resultado();
-                resultado = new Ped_ItemFacade().AtualizaValor(ListaPedItens);
+                resultado = new PCompra_Facade().Fechar((List<ProcessoCompraItem>)ListaGridPersistida);
                 if (resultado.Sucesso)
                 {
-                    ProcessoCompra oProcessoCompra = new ProcessoCompra();
 
-                    oProcessoCompra.Status = Conversion.preencheCampoInt(StatusPedido.Aguardando_Entrega);
-                    oProcessoCompra.CodProcessoCompra = Convert.ToInt32(Request.QueryString["CDP"]);
-                    resultado = new Ped_ItemFacade().AtualizaStatusProcessoCompra(oProcessoCompra);
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "ResultadoConfirmação", "alert('" + resultado.Mensagens[0].Descricoes[0] + "');", true);
 
-                    if (resultado.Sucesso)
-                    {
 
-                        string msg = "Processo de Compra Finalizado, Aguardando Entrega!";
-
-                        string script = Consts.JavaScript.Alert(Consts.Funcoes.Replacer4js(msg), false);
-                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alerta", script, true);
-
-                    }
                 }
+                else {
+
+                    for (int msg = 0; msg < resultado.Mensagens.Count; msg++)
+                    {
+                        switch (resultado.Mensagens[msg].Campo)
+                        {
+                            case "ProcessoCompraFechar":
+                                ScriptManager.RegisterStartupScript(this, this.GetType(), "ResultadoConfirmação", "alert('" + resultado.Mensagens[msg].Descricoes[0] + "');", true);
+                                break;
+
+                        }
+                    }
+                
+                }
+
             }
+            catch (Exception ex)
+            {
+                
+                throw ex;
+            }
+
+            //List<Ped_Item> ListaPedItens = SalvaItens();
+            //if (ListaPedItens.Count > 0)
+            //{
+            //    Resultado resultado = new Resultado();
+            //    resultado = new Ped_ItemFacade().AtualizaValor(ListaPedItens);
+            //    if (resultado.Sucesso)
+            //    {
+            //        ProcessoCompra oProcessoCompra = new ProcessoCompra();
+
+            //        oProcessoCompra.Status = Conversion.preencheCampoInt(StatusPedido.Aguardando_Entrega);
+            //        oProcessoCompra.CodProcessoCompra = Convert.ToInt32(Request.QueryString["CDP"]);
+            //        resultado = new Ped_ItemFacade().AtualizaStatusProcessoCompra(oProcessoCompra);
+
+            //        if (resultado.Sucesso)
+            //        {
+
+            //            string msg = "Processo de Compra Finalizado, Aguardando Entrega!";
+
+            //            string script = Consts.JavaScript.Alert(Consts.Funcoes.Replacer4js(msg), false);
+            //            ScriptManager.RegisterStartupScript(this, this.GetType(), "alerta", script, true);
+
+            //        }
+            //    }
+            //}
         }
 
         protected void btn_Voltar_Click(object sender, EventArgs e)

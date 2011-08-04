@@ -11,10 +11,14 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HarunaNet.SisWeb</RootNamespace>
     <AssemblyName>HarunaNet.SisWeb</AssemblyName>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -114,7 +118,6 @@
     <Content Include="library\img\btnSalvar.png" />
     <Content Include="library\img\mail_resposta.png" />
     <Content Include="library\img\topo.png" />
-    <Content Include="topo.png" />
     <Content Include="library\js\jqModal.js" />
     <Content Include="library\js\jquery-1.2.6.pack.js" />
     <Content Include="library\js\jquery.alphanumeric.js" />
@@ -325,13 +328,6 @@
       <DependentUpon>ProcessoCompraItens.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Teste.aspx.cs">
-      <DependentUpon>Teste.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Teste.aspx.designer.cs">
-      <DependentUpon>Teste.aspx</DependentUpon>
-    </Compile>
     <Compile Include="TrocarSenha.aspx.cs">
       <DependentUpon>TrocarSenha.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -467,7 +463,6 @@
     <Content Include="PedidoStatus.aspx" />
     <Content Include="ProcessoCompra.aspx" />
     <Content Include="ProcessoCompraItens.aspx" />
-    <Content Include="Teste.aspx" />
     <Content Include="TrocarSenha.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

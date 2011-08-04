@@ -17,7 +17,10 @@ namespace HarunaNet.BusinessRules
         {
             return new PCompraProcess().Listar(ref resultado);
         }
-
+        public Resultado Fechar(List<ProcessoCompraItem> ListaProcessoCompraItem)
+        {
+            return new PCompraProcess().Fechar(ListaProcessoCompraItem);
+        }
 
     }
 }

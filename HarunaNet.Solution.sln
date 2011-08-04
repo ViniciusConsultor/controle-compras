@@ -14,28 +14,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarunaNet.SisWeb", "HarunaNet.Website\HarunaNet.SisWeb.csproj", "{B32E52E1-D8D2-40D3-B70D-2A19345FD3AE}"
 EndProject
 Global
-	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 7
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = HarunaNet.BusinessRules\\HarunaNet.BusinessRules.csproj
-		SccLocalPath1 = .
-		SccProjectFilePathRelativizedFromConnection1 = HarunaNet.BusinessRules\\
-		SccProjectUniqueName2 = HarunaNet.DataLayer\\HarunaNet.DataLayer.csproj
-		SccLocalPath2 = .
-		SccProjectFilePathRelativizedFromConnection2 = HarunaNet.DataLayer\\
-		SccProjectUniqueName3 = HarunaNet.Entities\\HarunaNet.Entities.csproj
-		SccLocalPath3 = .
-		SccProjectFilePathRelativizedFromConnection3 = HarunaNet.Entities\\
-		SccProjectUniqueName4 = HarunaNet.Framework\\HarunaNet.Framework.csproj
-		SccLocalPath4 = .
-		SccProjectFilePathRelativizedFromConnection4 = HarunaNet.Framework\\
-		SccProjectUniqueName5 = HarunaNet.Reports\\HarunaNet.Reports.csproj
-		SccLocalPath5 = .
-		SccProjectFilePathRelativizedFromConnection5 = HarunaNet.Reports\\
-		SccProjectUniqueName6 = HarunaNet.Website\\HarunaNet.SisWeb.csproj
-		SccLocalPath6 = .
-		SccProjectFilePathRelativizedFromConnection6 = HarunaNet.Website\\
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
