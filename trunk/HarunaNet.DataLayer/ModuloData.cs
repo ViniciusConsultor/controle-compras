@@ -72,8 +72,10 @@ namespace HarunaNet.DataLayer
                     if (Conversion.preencheCampoInt(readerMenu["PODE_ACESSAR"]) == 1)
                     {
                         menu oMenu = new menu();
+                        oMenu.CodMenu = Conversion.preencheCampoInt(readerMenu["MODULO_ID"]);
                         oMenu.ItemMenu = Conversion.preencheCampoString(readerMenu["DESCRICAO"]);
                         oMenu.Pagina = Conversion.preencheCampoString(readerMenu["PAGINA_WEB"]);
+                        oMenu.ItemPai = Conversion.preencheCampoInt(readerMenu["ITEM_PAI"]);
                         oMenu.Visivel = Conversion.preencheCampoBoolean(readerMenu["ITEM_MENU"]);
                         oMenu.itens = ListarItensMenu(Conversion.preencheCampoInt(readerMenu["MODULO_ID"]));
 

@@ -1,17 +1,30 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPrincipal.master" AutoEventWireup="true"
-    CodeBehind="meuspedidos.aspx.cs" Inherits="HarunaNet.SisWeb.meuspedidos" Theme="haruna"  %>
+    CodeBehind="meuspedidos.aspx.cs" Inherits="HarunaNet.SisWeb.meuspedidos" Theme="haruna" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-        <br />
-        <br />
+            <br />
+            <br />
             <div id="resultado">
                 <div class="result_pesq">
                     <h2>
                         Meus Pedidos</h2>
                     <asp:Label ID="lblTitulo" runat="server" CssClass="titulo" Text="" Visible="false"></asp:Label>
                     <br />
+                    <table border="0" cellpadding="0" cellspacing="1" width="100%">
+                        <tr>
+                            <td class="gridnormal" align="left" style="width: 150px;">
+                                <asp:Label CssClass="labeltitulo" ID="lblUsuario" runat="server" Text="Nome Completo:"
+                                    Visible="False"></asp:Label>
+                            </td>
+                            <td align="left">
+                                <asp:DropDownList runat="server" ID="ddlusuario" AutoPostBack="True" OnSelectedIndexChanged="ddlusuario_SelectedIndexChanged"
+                                    Visible="False">
+                                </asp:DropDownList>
+                            </td>
+                        </tr>
+                    </table>
                     <asp:GridView ID="gvListaMeusPed" runat="server" AutoGenerateColumns="False" Width="100%"
                         EmptyDataText="Não há pedidos realizados!" CssClass="gridheader" DataKeyNames="PedidoID"
                         AllowSorting="True" OnRowDataBound="gvListaMeusPed_RowDataBound" OnRowCommand="gvListaMeusPed_RowCommand"
@@ -26,7 +39,8 @@
                                 <HeaderStyle HorizontalAlign="Left" />
                                 <ItemStyle HorizontalAlign="Center" Width="80px" />
                             </asp:BoundField>
-                            <asp:BoundField DataField="DataPedido" HeaderText="Data" DataFormatString="{0:dd/MM/yyyy}" HtmlEncode="False">
+                            <asp:BoundField DataField="DataPedido" HeaderText="Data" DataFormatString="{0:dd/MM/yyyy}"
+                                HtmlEncode="False">
                                 <HeaderStyle HorizontalAlign="Left" />
                                 <ItemStyle HorizontalAlign="Center" Width="80px" />
                             </asp:BoundField>

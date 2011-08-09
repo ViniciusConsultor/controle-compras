@@ -31,6 +31,24 @@ namespace HarunaNet.SisWeb {
         protected global::System.Web.UI.WebControls.Label lblTitulo;
         
         /// <summary>
+        /// lblUsuario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblUsuario;
+        
+        /// <summary>
+        /// ddlusuario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlusuario;
+        
+        /// <summary>
         /// gvListaMeusPed control.
         /// </summary>
         /// <remarks>

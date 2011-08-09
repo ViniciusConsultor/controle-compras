@@ -27,26 +27,48 @@ namespace HarunaNet.SisWeb
             get { return Convert.ToInt32(ViewState["sortDirection"]); }
             set { ViewState["sortDirection"] = value; }
         }
-
+               
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
             {
                 sortExpression = "DataPedido";
                 sortDirection = 1;
-                PreencherGrid();
+                
+                if (((Usuario)Session["USUARIO"]).Perfil.PerfilId == 1)
+                {
+
+                    PesquisarUsuario();
+                    ddlusuario.Visible = true;
+                    lblUsuario.Visible = true;
+                    ddlusuario.SelectedValue = ((Usuario)Session["USUARIO"]).UsuarioId.ToString();
+                }
+                PreencherGrid(ddlusuario.SelectedValue == "" ? ((Usuario)Session["USUARIO"]).UsuarioId : Convert.ToInt32(ddlusuario.SelectedValue));
             }
         }
 
-        private void PreencherGrid()
+        private void PesquisarUsuario()
+        {
+            Resultado resultado = new Resultado();
+            ddlusuario.DataSource = new UsuarioFacade().Listar("", ref resultado);
+            ddlusuario.DataValueField = "UsuarioId";
+            ddlusuario.DataTextField = "Nome";
+            ddlusuario.DataBind();
+        }
+
+        private void PreencherGrid(int usuarioID)
         {
             Resultado resultado = new Resultado();
             PedidoFacade oPedFacade = new PedidoFacade();
             List<MeusPedidos> oPedidos = new List<MeusPedidos>();
-            oPedidos = oPedFacade.Listar(((Usuario)Session["USUARIO"]).UsuarioId, ref resultado);
+            oPedidos = oPedFacade.Listar(usuarioID, ref resultado);
+
+            gvListaMeusPed.DataSource = null;
+            gvListaMeusPed.DataBind();
 
             if (resultado.Sucesso)
             {
+                lblMensagem.Visible = false;
                 ListaGridPersistida = oPedidos;
                 gvListaMeusPed.DataSource = (List<MeusPedidos>)ListaGridPersistida;
                 gvListaMeusPed.DataBind();
@@ -54,7 +76,7 @@ namespace HarunaNet.SisWeb
             else
             {
                 lblMensagem.Text = resultado.Mensagens[0].Descricoes[0].ToString();
-                lblMensagem.Visible = true;
+                lblMensagem.Visible = false;
             }
 
         }
@@ -123,13 +145,13 @@ namespace HarunaNet.SisWeb
             }
 
             sortExpression = e.SortExpression;
-            PreencherGrid();
+            PreencherGrid(ddlusuario.SelectedValue == "" ? ((Usuario)Session["USUARIO"]).UsuarioId : Convert.ToInt32(ddlusuario.SelectedValue));
         }
 
         protected void gvListaMeusPed_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             gvListaMeusPed.PageIndex = e.NewPageIndex;
-            PreencherGrid();
+            PreencherGrid(ddlusuario.SelectedValue == "" ? ((Usuario)Session["USUARIO"]).UsuarioId : Convert.ToInt32(ddlusuario.SelectedValue));
         }
 
         protected void btn_Voltar_Click(object sender, EventArgs e)
@@ -140,6 +162,11 @@ namespace HarunaNet.SisWeb
         private void EditarGrupoNotasExecucao()
         {
             Server.Transfer("MeusPedidosItens.aspx",true);
+        }
+
+        protected void ddlusuario_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            PreencherGrid(ddlusuario.SelectedValue == "" ? ((Usuario)Session["USUARIO"]).UsuarioId : Convert.ToInt32(ddlusuario.SelectedValue));
         }
     }
 }
