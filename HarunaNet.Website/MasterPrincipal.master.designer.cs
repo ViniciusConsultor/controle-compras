@@ -49,15 +49,6 @@ namespace HarunaNet.SisWeb {
         protected global::System.Web.UI.WebControls.Label lbl_logado;
         
         /// <summary>
-        /// mnuPrincipal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Menu mnuPrincipal;
-        
-        /// <summary>
         /// menu control.
         /// </summary>
         /// <remarks>

@@ -55,6 +55,12 @@
       <HintPath>..\..\..\Documents and Settings\silva297\Desktop\astreeview-1.5.8_for_ASP.Net_2.0\ASTreeView.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v11.1, Version=11.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
@@ -94,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AprovacaoItem.aspx" />
+    <Content Include="Cadastros.aspx" />
     <Content Include="cadFornecedor.aspx" />
     <Content Include="CadPerfil.aspx" />
     <Content Include="CadUsuario.aspx" />
@@ -186,6 +193,13 @@
     </Compile>
     <Compile Include="AprovacaoItem.aspx.designer.cs">
       <DependentUpon>AprovacaoItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros.aspx.cs">
+      <DependentUpon>Cadastros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cadastros.aspx.designer.cs">
+      <DependentUpon>Cadastros.aspx</DependentUpon>
     </Compile>
     <Compile Include="cadFornecedor.aspx.cs">
       <DependentUpon>cadFornecedor.aspx</DependentUpon>
@@ -327,7 +341,9 @@
     <Compile Include="ProcessoCompraItens.aspx.designer.cs">
       <DependentUpon>ProcessoCompraItens.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="TrocarSenha.aspx.cs">
       <DependentUpon>TrocarSenha.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
