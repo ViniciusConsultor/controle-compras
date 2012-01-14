@@ -31,3 +31,13 @@ E:\Projetos\HarunaNet\HarunaNet.Reports\obj\Debug\RdlCompile.cache
 E:\Projetos\HarunaNet\HarunaNet.Reports\obj\Debug\RdlCompile.compiled
 E:\Projetos\HarunaNet\HarunaNet.Reports\obj\Debug\Allianz.NovoPortal.Report.dll
 E:\Projetos\HarunaNet\HarunaNet.Reports\obj\Debug\Allianz.NovoPortal.Report.pdb
+E:\Projetos\HNetWeb\HarunaNet.Reports\bin\Debug\Allianz.NovoPortal.Report.dll.config
+E:\Projetos\HNetWeb\HarunaNet.Reports\bin\Debug\Allianz.NovoPortal.Report.dll
+E:\Projetos\HNetWeb\HarunaNet.Reports\bin\Debug\Allianz.NovoPortal.Report.pdb
+E:\Projetos\HNetWeb\HarunaNet.Reports\bin\Debug\HarunaNet.Entities.dll
+E:\Projetos\HNetWeb\HarunaNet.Reports\bin\Debug\HarunaNet.Entities.pdb
+E:\Projetos\HNetWeb\HarunaNet.Reports\obj\Debug\ResolveAssemblyReference.cache
+E:\Projetos\HNetWeb\HarunaNet.Reports\obj\Debug\RdlCompile.cache
+E:\Projetos\HNetWeb\HarunaNet.Reports\obj\Debug\RdlCompile.compiled
+E:\Projetos\HNetWeb\HarunaNet.Reports\obj\Debug\Allianz.NovoPortal.Report.dll
+E:\Projetos\HNetWeb\HarunaNet.Reports\obj\Debug\Allianz.NovoPortal.Report.pdb

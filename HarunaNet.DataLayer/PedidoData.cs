@@ -128,7 +128,7 @@ namespace HarunaNet.DataLayer
                     oAprovacao.CodigoItem = Conversion.preencheCampoInt(readerAprov["COD_PEDITENS"]);
                     oAprovacao.DataPedido = Conversion.preencheCampoDateTime(readerAprov["DAT_PEDIDO"]);
                     oAprovacao.Descrição = Conversion.preencheCampoString(readerAprov["DSC_DESCRICAO"]);
-                    oAprovacao.Item = Conversion.preencheCampoString(readerAprov["DSC_OUTROS"])==""?Conversion.preencheCampoString(readerAprov["NOM_ITEM"]): Conversion.preencheCampoString(readerAprov["NOM_ITEM"]) + " - " + Conversion.preencheCampoString(readerAprov["DSC_OUTROS"]) ;
+                    oAprovacao.Item = Conversion.preencheCampoString(readerAprov["DSC_OUTROS"]) == "" ? Conversion.preencheCampoString(readerAprov["NOM_ITEM"]) : Conversion.preencheCampoString(readerAprov["NOM_ITEM"]) + " - " + Conversion.preencheCampoString(readerAprov["DSC_OUTROS"]);
                     oAprovacao.NomeSolicitante = Conversion.preencheCampoString(readerAprov["NOME"]);
                     oAprovacao.Status = Conversion.preencheCampoInt(readerAprov["NUM_STATUS_ITEM"]);
                     oListaAprovacao.Add(oAprovacao);

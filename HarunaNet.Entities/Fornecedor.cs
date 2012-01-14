@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+using System.Runtime.Serialization;
 namespace HarunaNet.Entities
 {
-    [Serializable()]
+     [Serializable()]
+    [DataContract(Namespace = "HarunaNet.Entities")]
     public class Fornecedor
     {
         public int FornecedorID { get; set; }
@@ -25,5 +26,6 @@ namespace HarunaNet.Entities
         public string Celular { get; set; }
         public string Email { get; set; }
         public int Status { get; set; }
+        public string Observacao { get; set; }
     }
 }

@@ -37,7 +37,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <span class="textotitulos">Repita Nova Atual:</span>
+                                <span class="textotitulos">Repita Nova Senha:</span>
                             </td>
                             <td>
                                 <asp:TextBox runat="server" ID="txtSenhaNova2" CssClass="textboxes" TextMode="Password"></asp:TextBox>

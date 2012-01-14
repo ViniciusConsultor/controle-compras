@@ -98,13 +98,26 @@ namespace HarunaNet.BusinessRules.Validation
                 //    m_resultado.Sucesso = false;
                 //}
             }
+            else if (m_ProcessoCompraItem.NextStatus == 5)
+            {
+                if (m_ProcessoCompraItem.DescMotivoCancelamento.Trim() == "")
+                {
+                    mensagem = new Mensagem();
+                    mensagem.Campo = "DescMotivoIndisponivel";
+                    mensagem.Descricoes.Add("Campo Descrição obrigatório.");
+                    m_resultado.Mensagens.Add(mensagem);
+                    m_resultado.Sucesso = false;
+                }
+
+
+            }
             else if (m_ProcessoCompraItem.NextStatus == 6)
             {
                 if (m_ProcessoCompraItem.DescMotivoCancelamento.Trim() == "")
                 {
                     mensagem = new Mensagem();
                     mensagem.Campo = "DescMotivoCancelamento";
-                    mensagem.Descricoes.Add("Motivo do cancelamento obrigatório!");
+                    mensagem.Descricoes.Add("Motivo do cancelamento obrigatório.");
                     m_resultado.Mensagens.Add(mensagem);
                     m_resultado.Sucesso = false;
                 }

@@ -11,7 +11,6 @@
                     </h2>
                     <asp:ValidationSummary ID="vlsListaError" runat="server" BorderStyle="None" ValidationGroup="ValidationSalvar"
                         ShowMessageBox="True" ShowSummary="false" />
-
                     <asp:HiddenField ID="FornecedorID" runat="server" />
                     <table width="100%" cellpadding="1" cellspacing="1">
                         <tr>
@@ -166,13 +165,21 @@
                                     ControlToValidate="txtEmail"></asp:RegularExpressionValidator>
                             </td>
                         </tr>
+                        <tr>
+                            <td style="width: 20%">
+                                <asp:Label CssClass="labeltitulo" ID="lblObs" runat="server" Text="Observações:"></asp:Label>
+                            </td>
+                            <td style="width: 20%" colspan="4">
+                                <asp:TextBox ID="txtObservacoes" runat="server" Rows="10" TextMode="MultiLine" Width="99%"
+                                    CssClass="textboxes" Height="150px"></asp:TextBox>
+                            </td>
+                        </tr>
                     </table>
                     <br />
                     <div>
-                        <asp:Button runat="server" ID="btnCancelar" Text="Cancelar" 
-                            onclick="btnCancelar_Click" />
-                        <asp:Button runat="server" ID="btnSalvar" ValidationGroup="ValidationSalvar" 
-                            Text="Salvar" onclick="btnSalvar_Click" />
+                        &nbsp;<asp:Button runat="server" ID="btnSalvar" ValidationGroup="ValidationSalvar"
+                            Text="Salvar" OnClick="btnSalvar_Click" />
+                        <asp:Button runat="server" ID="btnCancelar" Text="Cancelar" OnClick="btnCancelar_Click" />
                     </div>
                 </div>
             </div>

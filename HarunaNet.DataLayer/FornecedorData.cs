@@ -50,6 +50,22 @@ namespace HarunaNet.DataLayer
                      newFornecedor.RazaoSocial = Conversion.preencheCampoString(readerFornecedor["NOM_RAZAO_SOCIAL"]);
                      newFornecedor.CNPJ = Conversion.preencheCampoString(readerFornecedor["NUM_CNPJ"]);
                      newFornecedor.NomeFantasia = Conversion.preencheCampoString(readerFornecedor["NOM_FANTASIA"]);
+                     newFornecedor.InscricaoEstadual = Conversion.preencheCampoString(readerFornecedor["NUM_INSCRICAO_ESTADUAL"]);
+                     newFornecedor.InscricaoMunicipal = Conversion.preencheCampoString(readerFornecedor["NUM_INSCRICAO_MUNICIPAL"]);
+                     newFornecedor.Logradouro = Conversion.preencheCampoString(readerFornecedor["NOM_LOGRADOURO"]);
+                     newFornecedor.Bairro = Conversion.preencheCampoString(readerFornecedor["NOM_BAIRRO"]);
+                     newFornecedor.Cidade = Conversion.preencheCampoString(readerFornecedor["NOM_CIDADE"]);
+                     newFornecedor.UF = Conversion.preencheCampoString(readerFornecedor["NOM_UF"]);
+                     newFornecedor.CEP = Conversion.preencheCampoString(readerFornecedor["NUM_CEP"]);
+                     newFornecedor.Telefone_1 = Conversion.preencheCampoString(readerFornecedor["NUM_TELEFONE1"]);
+                     newFornecedor.Ramal_1 = Conversion.preencheCampoString(readerFornecedor["NUM_RAMAL1"]);
+                     newFornecedor.Telefone_2 = Conversion.preencheCampoString(readerFornecedor["NUM_TELEFONE2"]);
+                     newFornecedor.Ramal_2 = Conversion.preencheCampoString(readerFornecedor["NUM_RAMAL2"]);
+                     newFornecedor.Celular = Conversion.preencheCampoString(readerFornecedor["NUM_CEL"]);
+                     newFornecedor.Email = Conversion.preencheCampoString(readerFornecedor["EMAIL"]);
+                     newFornecedor.Observacao = Conversion.preencheCampoString(readerFornecedor["OBSERVACAO"]);
+                     newFornecedor.Status = Conversion.preencheCampoInt(readerFornecedor["NUM_STATUS_ID"]);
+
 
                      listaFornecedor.Add(newFornecedor);
                 }
@@ -85,13 +101,14 @@ namespace HarunaNet.DataLayer
                     oFornecedor.Ramal_2 = Conversion.preencheCampoString(readerFornecedor["NUM_RAMAL2"]);
                     oFornecedor.Celular = Conversion.preencheCampoString(readerFornecedor["NUM_CEL"]);
                     oFornecedor.Email = Conversion.preencheCampoString(readerFornecedor["EMAIL"]);
+                    oFornecedor.Observacao = Conversion.preencheCampoString(readerFornecedor["OBSERVACAO"]);
                     oFornecedor.Status = Conversion.preencheCampoInt(readerFornecedor["NUM_STATUS_ID"]);
+
                 }
                 readerFornecedor.Dispose();
             }
             return oFornecedor;
         }
-
 
         public Resultado Inserir(Fornecedor oFornecedor)
         {
@@ -117,6 +134,7 @@ namespace HarunaNet.DataLayer
                 this.m_db.AddInParameter(dbCommand, "@RAMAL2", DbType.String, oFornecedor.Ramal_2.Trim());
                 this.m_db.AddInParameter(dbCommand, "@CELULAR", DbType.String, oFornecedor.Celular.Trim());
                 this.m_db.AddInParameter(dbCommand, "@EMAIL", DbType.String, oFornecedor.Email.Trim());
+                this.m_db.AddInParameter(dbCommand, "@OBSERVACAO", DbType.String, oFornecedor.Observacao.Trim());
                 this.m_db.AddInParameter(dbCommand, "@STATUS", DbType.Int32, oFornecedor.Status);
 
                 resultado.Id = Convert.ToInt32(this.m_db.ExecuteScalar(dbCommand));
@@ -159,6 +177,7 @@ namespace HarunaNet.DataLayer
                 this.m_db.AddInParameter(dbCommand, "@CELULAR", DbType.String, oFornecedor.Celular.Trim());
                 this.m_db.AddInParameter(dbCommand, "@EMAIL", DbType.String, oFornecedor.Email.Trim());
                 this.m_db.AddInParameter(dbCommand, "@STATUS", DbType.Int32, oFornecedor.Status);
+                this.m_db.AddInParameter(dbCommand, "@OBSERVACAO", DbType.String, oFornecedor.Observacao.Trim());
                 this.m_db.AddInParameter(dbCommand, "@FORNECEDOR_ID", DbType.Int32, oFornecedor.FornecedorID);
 
                 resultado.Id = Convert.ToInt32(this.m_db.ExecuteScalar(dbCommand));

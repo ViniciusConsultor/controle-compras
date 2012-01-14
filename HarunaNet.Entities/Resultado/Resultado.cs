@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Runtime.Serialization;
+using System.ComponentModel;
 
 namespace HarunaNet.Entities
 {
-    [Serializable()]
+    [DataContract(Namespace = "HarunaNet.Entities")]
     public class Resultado
     {
         #region Atributos
@@ -17,6 +19,9 @@ namespace HarunaNet.Entities
         /// <summary>
         /// Status que informa se a operação ocorreu com sucesso
         /// </summary>
+        /// 
+        [DataMember()]
+        [DataObjectField(false, false, false)]
         public bool Sucesso
         {
             get { return m_sucesso; }
@@ -25,6 +30,8 @@ namespace HarunaNet.Entities
         /// <summary>
         /// Lista dos campos e mensagens de validação
         /// </summary>
+        /// [DataMember()]
+        [DataObjectField(false, false, false)]
         public List<Mensagem> Mensagens
         {
             get { return m_mensagens; }
@@ -33,6 +40,11 @@ namespace HarunaNet.Entities
         /// <summary>
         /// Identificador único dos resultado
         /// </summary>
+        ///
+        /// [DataMember()]
+        
+        [DataMember()]
+        [DataObjectField(true, false, false)]
         public int Id
         {
             get { return m_id; }

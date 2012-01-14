@@ -28,3 +28,13 @@ E:\Projetos\HarunaNet\HarunaNet.Reports\obj\Release\RdlCompile.cache
 E:\Projetos\HarunaNet\HarunaNet.Reports\obj\Release\RdlCompile.compiled
 E:\Projetos\HarunaNet\HarunaNet.Reports\obj\Release\Allianz.NovoPortal.Report.dll
 E:\Projetos\HarunaNet\HarunaNet.Reports\obj\Release\Allianz.NovoPortal.Report.pdb
+E:\Projetos\HNetWeb\HarunaNet.Reports\bin\Release\Allianz.NovoPortal.Report.dll.config
+E:\Projetos\HNetWeb\HarunaNet.Reports\bin\Release\Allianz.NovoPortal.Report.dll
+E:\Projetos\HNetWeb\HarunaNet.Reports\bin\Release\Allianz.NovoPortal.Report.pdb
+E:\Projetos\HNetWeb\HarunaNet.Reports\bin\Release\HarunaNet.Entities.dll
+E:\Projetos\HNetWeb\HarunaNet.Reports\bin\Release\HarunaNet.Entities.pdb
+E:\Projetos\HNetWeb\HarunaNet.Reports\obj\Release\ResolveAssemblyReference.cache
+E:\Projetos\HNetWeb\HarunaNet.Reports\obj\Release\RdlCompile.cache
+E:\Projetos\HNetWeb\HarunaNet.Reports\obj\Release\RdlCompile.compiled
+E:\Projetos\HNetWeb\HarunaNet.Reports\obj\Release\Allianz.NovoPortal.Report.dll
+E:\Projetos\HNetWeb\HarunaNet.Reports\obj\Release\Allianz.NovoPortal.Report.pdb

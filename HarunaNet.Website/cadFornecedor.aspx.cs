@@ -41,6 +41,7 @@ namespace HarunaNet.SisWeb
             txtRamal2.Text = oFornecedor.Ramal_2;
             txtCelular.Text = oFornecedor.Celular;
             txtEmail.Text = oFornecedor.Email;
+            txtObservacoes.Text = oFornecedor.Observacao;
         }
 
         protected void btnSalvar_Click(object sender, EventArgs e)
@@ -67,13 +68,13 @@ namespace HarunaNet.SisWeb
                 oFornecedor.Ramal_2 = txtRamal2.Text;
                 oFornecedor.Celular = txtCelular.Text;
                 oFornecedor.Email = txtEmail.Text;
+                oFornecedor.Observacao = txtObservacoes.Text.Trim();
                 oFornecedor.Status = 1;
 
                 resultado = new FornecedorFacade().Salvar(oFornecedor);
                 if (resultado.Sucesso)
                 {
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alerta", Consts.JavaScript.Alert(Consts.Funcoes.Replacer4js(resultado.Mensagens[0].Descricoes[0].ToString()), false), true);
-                    //Response.Redirect("~/Fornecedor.aspx");
                     btnCancelar.Text = "Voltar";
                 }
                 else
@@ -82,7 +83,7 @@ namespace HarunaNet.SisWeb
                 }
 
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 //Fechar();
             }

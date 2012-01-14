@@ -11,7 +11,6 @@ namespace HarunaNet.SisWeb
 {
     public partial class ProcessoCompraItens : PaginaBase
     {
-        List<Status> StatusItem = null;
         public ProcessoCompraItem oProcessoCompraItem
         {
             get { return (ProcessoCompraItem)ViewState["Objeto"]; }
@@ -19,6 +18,7 @@ namespace HarunaNet.SisWeb
         }
 
         public int CDP;
+
         public List<ProcessoCompraItem> Lista { get { return (List<ProcessoCompraItem>)ListaGridPersistida; } }
 
         public int Key { get; set; }
@@ -224,110 +224,6 @@ namespace HarunaNet.SisWeb
             //ScriptManager.RegisterStartupScript(this, this.GetType(), "abre", script, true);
         }
 
-        //protected void btnSalvarItem_Click(object sender, EventArgs e)
-        //{
-        //    //Fornecedor oFornecedor = new Fornecedor();
-        //    //ProcessoCompraItem oProcessoCompraItemCopia = new ProcessoCompraItem();
-
-        //    //oProcessoCompraItemCopia = oProcessoCompraItem;
-        //    //oFornecedor.FornecedorID = Convert.ToInt32(ddl_Fornecedor.SelectedValue);
-        //    //oProcessoCompraItem.Fornecedor = oFornecedor;
-        //    //oProcessoCompraItem.NextStatus = Convert.ToInt32(ddl_Status.SelectedValue);
-
-        //    //oProcessoCompraItem.QuantidadeComprada = txt_QtdComprada.Text.ToString() == "" ? 0 : Convert.ToInt32(txt_QtdComprada.Text);
-        //    //oProcessoCompraItem.ValorUnitario = txt_Valor.Text.ToString() == "" ? 0 : Convert.ToDecimal(txt_Valor.Text);
-        //    //oProcessoCompraItem.DataCompra = dt_DataCompra.Text.Trim() != "" ? Convert.ToDateTime(dt_DataCompra.Text) : DateTime.MinValue;
-        //    //oProcessoCompraItem.DataPrevisaoEntrega = dt_PrevisaoEntrega.Text.Trim() != "" ? Convert.ToDateTime(dt_PrevisaoEntrega.Text) : DateTime.MinValue;
-        //    //oProcessoCompraItem.DataEntrega = dt_Entrega.Text.Trim() != "" ? Convert.ToDateTime(dt_Entrega.Text) : DateTime.MinValue;
-
-        //    //if (txt_NotaFiscal.Text.ToString().Trim() != "")
-        //    //    oProcessoCompraItem.NotaFiscal = Convert.ToInt32(txt_NotaFiscal.Text);
-
-        //    //Resultado resultado = new Resultado();
-        //    //resultado = new Ped_ItemFacade().AtualizaItemCompra(oProcessoCompraItem);
-
-        //    //if (resultado.Sucesso)
-        //    //{
-        //    //    AtualizaGrid();
-        //    //    LiparCampos();
-
-        //    //    string msg = "Item autalizado com sucesso!";
-
-        //    //    string script = Consts.JavaScript.Alert(Consts.Funcoes.Replacer4js(msg), false);
-        //    //    ScriptManager.RegisterStartupScript(this, this.GetType(), "alerta", script, true);
-
-        //    //     script = "$dvEditarPedido.jqmHide();";
-        //    //    ScriptManager.RegisterStartupScript(this, this.GetType(), "abre", script, true);
-        //    //}
-        //    //else
-        //    //{
-        //    //    lblErroDTEntrega.Visible = false;
-        //    //    lblErroPrevisaoEntrega.Visible = false;
-        //    //    lblErroFornecedor.Visible = false;
-
-        //    //    for (int msg = 0; msg < resultado.Mensagens.Count; msg++)
-        //    //    {
-        //    //        switch (resultado.Mensagens[msg].Campo)
-        //    //        {
-        //    //            case "DataCompra":
-        //    //                lblErroDataCompra.Text = resultado.Mensagens[msg].Descricoes[0];
-        //    //                lblErroDataCompra.Visible = true;
-        //    //                break;
-        //    //            case "Valor":
-        //    //                lblErroValor.Text = resultado.Mensagens[msg].Descricoes[0];
-        //    //                lblErroValor.Visible = true;
-        //    //                break;
-        //    //            case "Fornecedor":
-        //    //                lblErroFornecedor.Text = resultado.Mensagens[msg].Descricoes[0];
-        //    //                lblErroFornecedor.Visible = true;
-        //    //                break;
-        //    //            case "QuantidadeComprada":
-        //    //                lblErroQtdComprada.Text = resultado.Mensagens[msg].Descricoes[0];
-        //    //                lblErroQtdComprada.Visible = true;
-        //    //                break;
-        //    //            case "PrevisaoEntrega":
-        //    //                lblErroPrevisaoEntrega.Text = resultado.Mensagens[msg].Descricoes[0];
-        //    //                lblErroPrevisaoEntrega.Visible = true;
-        //    //                break;
-        //    //            case "DataEntrega":
-        //    //                lblErroDTEntrega.Text = resultado.Mensagens[msg].Descricoes[0];
-        //    //                lblErroDTEntrega.Visible = true;
-        //    //                //ScriptManager.RegisterStartupScript(this, this.GetType(), "ResultadoConfirmação", "alert('Erro ao confirmar a operação! Nenhuma alteração efetuada');", true);
-        //    //                break;
-        //    //        }
-        //    //    }
-        //    //}
-        //}
-
-        //public void LiparCampos()
-        //{
-
-
-        //    lblErroDataCompra.Text = "";
-        //    lblErroDTEntrega.Text = "";
-        //    lblErroFornecedor.Text = "";
-        //    lblErroPrevisaoEntrega.Text = "";
-        //    lblErroQtdComprada.Text = "";
-        //    lblErroValor.Text = "";
-        //    lblMensagem.Text = "";
-
-        //    lbl_NumPedido.Text = "";
-        //    lbl_Projeto.Text = "";
-        //    lbl_NomeUsuario.Text = "";
-        //    lbl_Item.Text = "";
-        //    lbl_Quantidade.Text = "";
-
-        //    ddl_Fornecedor.SelectedValue = "0";
-        //    ddl_Status.SelectedValue = "0";
-
-        //    txt_QtdComprada.Text = "";
-        //    txt_Valor.Text = "";
-        //    txt_NotaFiscal.Text = "";
-
-        //    txt_NFSerie.Text = "";
-        //    dt_EmissaoNF.Text = "";
-        //}
-
         protected void btnCancelarCadUsu_Click(object sender, EventArgs e)
         {
             //LiparCampos();
@@ -344,7 +240,6 @@ namespace HarunaNet.SisWeb
         {
             args.IsValid = false;
         }
-
 
     }
 }

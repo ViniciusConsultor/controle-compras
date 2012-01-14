@@ -42,3 +42,14 @@ E:\Projetos\HarunaNet\HarunaNet.Framework\bin\Debug\Microsoft.Practices.ObjectBu
 E:\Projetos\HarunaNet\HarunaNet.Framework\obj\Debug\ResolveAssemblyReference.cache
 E:\Projetos\HarunaNet\HarunaNet.Framework\obj\Debug\HarunaNet.Framework.dll
 E:\Projetos\HarunaNet\HarunaNet.Framework\obj\Debug\HarunaNet.Framework.pdb
+E:\Projetos\HNetWeb\HarunaNet.Framework\bin\Debug\HarunaNet.Framework.dll
+E:\Projetos\HNetWeb\HarunaNet.Framework\bin\Debug\HarunaNet.Framework.pdb
+E:\Projetos\HNetWeb\HarunaNet.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+E:\Projetos\HNetWeb\HarunaNet.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Projetos\HNetWeb\HarunaNet.Framework\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Projetos\HNetWeb\HarunaNet.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.xml
+E:\Projetos\HNetWeb\HarunaNet.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Projetos\HNetWeb\HarunaNet.Framework\bin\Debug\Microsoft.Practices.ObjectBuilder.xml
+E:\Projetos\HNetWeb\HarunaNet.Framework\obj\Debug\ResolveAssemblyReference.cache
+E:\Projetos\HNetWeb\HarunaNet.Framework\obj\Debug\HarunaNet.Framework.dll
+E:\Projetos\HNetWeb\HarunaNet.Framework\obj\Debug\HarunaNet.Framework.pdb

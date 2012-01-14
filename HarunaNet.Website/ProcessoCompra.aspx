@@ -48,7 +48,7 @@
                     </asp:TemplateField>
                     
                    
-                    <asp:TemplateField HeaderText="ReGerar Planilha" ItemStyle-Width="15%" ItemStyle-HorizontalAlign="Center">
+                    <asp:TemplateField HeaderText="ReGerar Planilha" Visible="false" ItemStyle-Width="15%" ItemStyle-HorizontalAlign="Center">
                         <ItemTemplate>
                             <asp:ImageButton ID="btnGerarPlanilha" runat="server" ImageUrl="~/library/img/ic_export_excel.png"
                                 OnClick="btnGerarPlanilha_Click" /></ItemTemplate>

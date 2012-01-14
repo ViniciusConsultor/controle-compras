@@ -6,7 +6,7 @@ using HarunaNet.Framework.Utils;
 using System.Reflection;
 using System.Collections.Generic;
 using System.Web.UI.WebControls;
-using DevExpress.Web.ASPxMenu;
+//using DevExpress.Web.ASPxMenu;
 using System.Data;
 
 using System.Configuration;
@@ -91,38 +91,38 @@ namespace HarunaNet.SisWeb
         //    }
         //}
 
-        protected void BuildMenu(ASPxMenu menu, List<menu> ListaMenu)
-        {
+        //protected void BuildMenu(ASPxMenu menu, List<menu> ListaMenu)
+        //{
 
-            // Build Menu Items
-            Dictionary<string, DevExpress.Web.ASPxMenu.MenuItem> menuItems =
-         new Dictionary<string, DevExpress.Web.ASPxMenu.MenuItem>();
+        //    // Build Menu Items
+        //    Dictionary<string, DevExpress.Web.ASPxMenu.MenuItem> menuItems =
+        // new Dictionary<string, DevExpress.Web.ASPxMenu.MenuItem>();
 
-            foreach (menu item in ListaMenu)
-            {
-                DevExpress.Web.ASPxMenu.MenuItem itemMenu = CreateMenuItem(item);
-                string itemID = item.CodMenu.ToString();
-                string parentID = item.ItemPai.ToString();
+        //    foreach (menu item in ListaMenu)
+        //    {
+        //        DevExpress.Web.ASPxMenu.MenuItem itemMenu = CreateMenuItem(item);
+        //        string itemID = item.CodMenu.ToString();
+        //        string parentID = item.ItemPai.ToString();
 
-                if (menuItems.ContainsKey(parentID))
-                    menuItems[parentID].Items.Add(itemMenu);
-                else
-                {
-                    if (parentID == "0") // It's Root Item
-                        menu.Items.Add(itemMenu);
-                }
-                menuItems.Add(itemID, itemMenu);
-            }
-        }
+        //        if (menuItems.ContainsKey(parentID))
+        //            menuItems[parentID].Items.Add(itemMenu);
+        //        else
+        //        {
+        //            if (parentID == "0") // It's Root Item
+        //                menu.Items.Add(itemMenu);
+        //        }
+        //        menuItems.Add(itemID, itemMenu);
+        //    }
+        //}
 
-        private DevExpress.Web.ASPxMenu.MenuItem CreateMenuItem(menu item)
-        {
-            DevExpress.Web.ASPxMenu.MenuItem ret = new DevExpress.Web.ASPxMenu.MenuItem();
-            ret.Text = item.ItemMenu.ToString();
-            ret.NavigateUrl = item.Pagina + ".aspx";
-            //ret.Image.Url = row["ImageUrl"].ToString();
-            return ret;
-        }
+        //private DevExpress.Web.ASPxMenu.MenuItem CreateMenuItem(menu item)
+        //{
+        //    DevExpress.Web.ASPxMenu.MenuItem ret = new DevExpress.Web.ASPxMenu.MenuItem();
+        //    ret.Text = item.ItemMenu.ToString();
+        //    ret.NavigateUrl = item.Pagina + ".aspx";
+        //    //ret.Image.Url = row["ImageUrl"].ToString();
+        //    return ret;
+        //}
 
         private void OrdenarLista(ref List<menu> oModulos)
         {

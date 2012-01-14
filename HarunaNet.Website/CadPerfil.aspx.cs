@@ -50,7 +50,7 @@ namespace HarunaNet.SisWeb
             PerfilFacade oPerfilFacade = new PerfilFacade();
             Resultado resultado = new Resultado();
             String oMenssagem = string.Empty;
-            bool ok = false;
+            //bool ok = false;
             string script = "";
             try
             {
