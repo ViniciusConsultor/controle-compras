@@ -10,6 +10,7 @@
                         Cadastros
                     </h2>
                     <ul class="topnav" id="menu" runat="server">
+                        <li><a href="Cad_Areas.aspx">Áreas </a></li>
                         <li><a href="CadUsuario.aspx">Usuários </a></li>
                         <li><a href="CadPerfil.aspx">Perfil </a></li>
                         <li><a href="Cad_Itens.aspx">Itens </a></li>

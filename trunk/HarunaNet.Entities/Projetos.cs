@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+using System.Runtime.Serialization;
 namespace HarunaNet.Entities
 {
-    [Serializable()]
+     [Serializable()]
+    [DataContract(Namespace = "HarunaNet.Entities")]
     public class Projetos
     {
         public int ProjetoID { get; set; }

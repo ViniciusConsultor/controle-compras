@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Runtime.Serialization;
+using System.ComponentModel;
 
 namespace HarunaNet.Entities
 {
-    [Serializable()]
+    [DataContract(Namespace = "HarunaNet.Entities")]
     public class Mensagem
     {
         #region Atributos
@@ -16,6 +18,9 @@ namespace HarunaNet.Entities
         /// <summary>
         /// Nome do campo a ser validado
         /// </summary>
+        /// 
+        [DataMember()]
+        [DataObjectField(false, false, false)]
         public string Campo
         {
             get { return m_campo; }
@@ -25,6 +30,8 @@ namespace HarunaNet.Entities
         /// <summary>
         /// Lista de menssagens de validação
         /// </summary>
+        /// [DataMember()]
+        [DataObjectField(false, false, false)]
         public List<string> Descricoes
         {
             get { return m_descricoes; }

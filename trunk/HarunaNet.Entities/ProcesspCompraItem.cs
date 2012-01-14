@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+using System.Runtime.Serialization;
 namespace HarunaNet.Entities
 {
     [Serializable()]
+    [DataContract(Namespace = "HarunaNet.Entities")]
     public class ProcessoCompraItem
     {
         public int CodProcesso { get; set; }
@@ -13,7 +14,7 @@ namespace HarunaNet.Entities
         public string CodPedidos { get; set; }
         public int Quantidade { get; set; }
         public int QuantidadeComprada { get; set; }
-        public DateTime DataCompra{ get; set; }
+        public DateTime DataCompra { get; set; }
         public DateTime DataPrevisaoEntrega { get; set; }
         public DateTime DataEntrega { get; set; }
         public DateTime Data_PedidoRestante { get; set; }
@@ -24,7 +25,6 @@ namespace HarunaNet.Entities
         public string NomeUsuario { get; set; }
         public Projetos projeto { get; set; }
         public string NomeProjeto { get; set; }
-        
         public string DescMotivoCancelamento { get; set; }
 
         public int TpDocumentoFiscal { get; set; }
@@ -48,7 +48,7 @@ namespace HarunaNet.Entities
         {
             this.Item = new Item();
             this.projeto = new Projetos();
-            DataPrevisaoEntrega  = DateTime.MinValue;
+            DataPrevisaoEntrega = DateTime.MinValue;
             DataEntrega = DateTime.MinValue;
         }
         #endregion

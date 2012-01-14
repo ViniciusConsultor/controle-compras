@@ -27,7 +27,7 @@ namespace HarunaNet.SisWeb
         {
             if (!IsPostBack)
             {
-               ;
+               
                 CarregaCombos();
                 if (((Usuario)Session["USUARIO"]).Perfil.PerfilId != 3)
                 {
@@ -296,9 +296,6 @@ namespace HarunaNet.SisWeb
 
         }
         #endregion
-          
-       
-
        
     }
 }

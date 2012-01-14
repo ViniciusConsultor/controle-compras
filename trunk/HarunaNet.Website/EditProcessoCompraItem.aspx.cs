@@ -144,7 +144,7 @@ namespace HarunaNet.SisWeb
         protected void btnSalvarDesc_Click(object sender, EventArgs e)
         {
             salvar();
-                
+
         }
 
         private void salvar()
@@ -162,7 +162,7 @@ namespace HarunaNet.SisWeb
             oPCompraItem.DataCompra = dt_DataCompra.Text.Trim() != "" ? Convert.ToDateTime(dt_DataCompra.Text) : DateTime.MinValue;
             oPCompraItem.DataPrevisaoEntrega = dt_PrevisaoEntrega.Text.Trim() != "" ? Convert.ToDateTime(dt_PrevisaoEntrega.Text) : DateTime.MinValue;
             oPCompraItem.DataEntrega = dt_Entrega.Text.Trim() != "" ? Convert.ToDateTime(dt_Entrega.Text) : DateTime.MinValue;
-
+            
             oPCompraItem.DescMotivoCancelamento = txt_DescMotivoCancelamento.Text.Trim();
 
             if (txt_NotaFiscal.Text.ToString().Trim() != "")
@@ -238,6 +238,13 @@ namespace HarunaNet.SisWeb
             string script = "$dvDescCancelar.jqmHide();";
             ScriptManager.RegisterStartupScript(this, this.GetType(), "abre", script, true);
         }
+
+        protected void ddl_Status_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+       
 
     }
 }

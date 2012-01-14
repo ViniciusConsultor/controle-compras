@@ -29,7 +29,6 @@ namespace HarunaNet.DataLayer
         }
         #endregion
 
-
         public List<ProcessoCompra> Listar()
         {
 
@@ -53,7 +52,6 @@ namespace HarunaNet.DataLayer
             }
             return listaPCompra;
         }
-
 
         public Resultado Atualizar(int CodProcessoCompra)
         {

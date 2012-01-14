@@ -234,10 +234,10 @@ h2
 
 .textboxes
 {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
     background-color: #fff;
-    width: 200px;
-    height: 15px;
-    border: none;
     text-align: left;
     vertical-align: middle;
     padding: 2px 10px 2px 0px;

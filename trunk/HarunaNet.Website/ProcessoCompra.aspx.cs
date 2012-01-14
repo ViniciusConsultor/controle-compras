@@ -11,6 +11,18 @@ namespace HarunaNet.SisWeb
 {
     public partial class ProcessoCompraWeb : PaginaBase
     {
+        private string sortExpression
+        {
+            get { return ViewState["sortExpression"].ToString(); }
+            set { ViewState["sortExpression"] = value; }
+        }
+
+        private int sortDirection
+        {
+            get { return Convert.ToInt32(ViewState["sortDirection"]); }
+            set { ViewState["sortDirection"] = value; }
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)

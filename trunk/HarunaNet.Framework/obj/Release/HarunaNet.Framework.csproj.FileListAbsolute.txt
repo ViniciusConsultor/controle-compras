@@ -31,3 +31,14 @@ E:\Projetos\HarunaNet\HarunaNet.Framework\bin\Release\Microsoft.Practices.Object
 E:\Projetos\HarunaNet\HarunaNet.Framework\obj\Release\ResolveAssemblyReference.cache
 E:\Projetos\HarunaNet\HarunaNet.Framework\obj\Release\HarunaNet.Framework.dll
 E:\Projetos\HarunaNet\HarunaNet.Framework\obj\Release\HarunaNet.Framework.pdb
+E:\Projetos\HNetWeb\HarunaNet.Framework\bin\Release\HarunaNet.Framework.dll
+E:\Projetos\HNetWeb\HarunaNet.Framework\bin\Release\HarunaNet.Framework.pdb
+E:\Projetos\HNetWeb\HarunaNet.Framework\bin\Release\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+E:\Projetos\HNetWeb\HarunaNet.Framework\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Projetos\HNetWeb\HarunaNet.Framework\bin\Release\Microsoft.Practices.ObjectBuilder.dll
+E:\Projetos\HNetWeb\HarunaNet.Framework\bin\Release\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.xml
+E:\Projetos\HNetWeb\HarunaNet.Framework\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Projetos\HNetWeb\HarunaNet.Framework\bin\Release\Microsoft.Practices.ObjectBuilder.xml
+E:\Projetos\HNetWeb\HarunaNet.Framework\obj\Release\ResolveAssemblyReference.cache
+E:\Projetos\HNetWeb\HarunaNet.Framework\obj\Release\HarunaNet.Framework.dll
+E:\Projetos\HNetWeb\HarunaNet.Framework\obj\Release\HarunaNet.Framework.pdb
