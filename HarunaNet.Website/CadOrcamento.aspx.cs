@@ -76,6 +76,8 @@ namespace HarunaNet.SisWeb
                         ListaOrcamento = new List<PedidosOrcamentos>();
                     }
 
+
+
                     Projetos oProd = new Projetos();
                     oProd.ProjetoID = Convert.ToInt32(ddlProjeto.SelectedValue);
                     oProd.Nome = ddlProjeto.SelectedItem.ToString();
@@ -84,6 +86,8 @@ namespace HarunaNet.SisWeb
                     oCat.CategoriaID = Convert.ToInt32(ddlCategoria.SelectedValue);
                     oCat.Nome = ddlCategoria.SelectedItem.ToString();
 
+                    ItemOrcamento.UnidadeMedida = new UnidadeMedida(Convert.ToInt32(ddlUnidadeMedida.SelectedItem.Value), ddlUnidadeMedida.SelectedItem.Text);
+                    
                     Grupo oArea = new Grupo();
                     if (((Usuario)Session["USUARIO"]).Perfil.PerfilId != 3)
                     {
@@ -105,8 +109,9 @@ namespace HarunaNet.SisWeb
                     ItemOrcamento.Projeto = oProd;
                     ItemOrcamento.Area = oArea;
                     ItemOrcamento.Quantidade = Convert.ToInt32(txtQuantidade.Text);
-                    ItemOrcamento.Data_PedidoOrcamento = DateTime.Now;
-                    ItemOrcamento.Status = Convert.ToInt32(StatusItemPedido.Em_Aberto);
+                    ItemOrcamento.DataNecessidade = Convert.ToDateTime(dtNecessidade.Text);
+
+                    ItemOrcamento.UsuarioPedido = ((Usuario)Session["USUARIO"]).UsuarioId;
 
                     if (txtOutros.Text.ToString() != string.Empty)
                     {
@@ -169,15 +174,12 @@ namespace HarunaNet.SisWeb
             else
             {
                 Resultado resultado = new Resultado();
-                List<Orcamentos> Lista = (List<Orcamentos>)ListaGridPersistida;
+                List<PedidosOrcamentos> Lista = (List<PedidosOrcamentos>)ListaGridPersistida;
                 
-                StringBuilder sb = new StringBuilder();
                 string msgConfirmacao = string.Empty;
 
                 //Incluir
-                //resultado =  oPedidoFacade.Incluir(opedido);
-                msgConfirmacao = "Pedido incluído com sucesso!";
-
+                resultado = new PedOrcamentoFacade().Incluir(Lista);
                 idPedido = resultado.Id;
 
                 if (resultado.Sucesso)

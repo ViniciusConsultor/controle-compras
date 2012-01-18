@@ -12,10 +12,7 @@ namespace HarunaNet.BusinessRules.Validation
     public class PedItemValidation
     {
         private Ped_Item m_PedidosItens;
-        private ProcessoCompraItem _ProcessoCompraItem;
-
         private Resultado m_resultado = new Resultado();
-
         private List<Mensagem> m_mensagem = new List<Mensagem>();
 
         public PedItemValidation()
