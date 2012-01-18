@@ -76,7 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CategoriaData.cs" />
-    <Compile Include="OrcamentoData.cs" />
+    <Compile Include="PedOrcamentoData.cs" />
     <Compile Include="UnidadeMedidaData.cs" />
     <Compile Include="TipoDocumentoData.cs" />
     <Compile Include="FornecedorData.cs" />

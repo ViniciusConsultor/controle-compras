@@ -67,6 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CategoriaFacade.cs" />
+    <Compile Include="PedOrcamentoFacade.cs" />
+    <Compile Include="Process\PedOrcamentoProcess.cs" />
     <Compile Include="UnidadeMedidaFacade.cs" />
     <Compile Include="Process\UnidadeMedidaProcess.cs" />
     <Compile Include="TipoDocumentoFacade.cs" />

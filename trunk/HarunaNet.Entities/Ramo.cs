@@ -8,6 +8,8 @@ namespace HarunaNet.Entities
     [DataContract(Namespace = "HarunaNet.Entities")]
     public class Ramo
     {
+        
+     
         public int RamoId { get; set; }
         public string Nome { get; set; }
         public string Descricao { get; set; }
