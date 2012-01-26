@@ -53,10 +53,10 @@ namespace HarunaNet.DataLayer
             return listaProjetos;
         }
 
-        public Projetos Listar(Projetos oProjeto)
+        public Projetos Obter(Int32 oProjeto)
         {
             DbCommand dbc = this.m_db.GetStoredProcCommand("dbo.SP_PROJETOS_GETbyID");
-            this.m_db.AddInParameter(dbc, "@ID", DbType.Int32, oProjeto.ProjetoID);
+            this.m_db.AddInParameter(dbc, "@ID", DbType.Int32, oProjeto);
             Projetos oProjetos = null;
             using (IDataReader readerProjetos = this.m_db.ExecuteReader(dbc))
             {

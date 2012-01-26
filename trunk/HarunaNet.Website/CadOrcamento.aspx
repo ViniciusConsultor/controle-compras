@@ -11,7 +11,7 @@
                 <div class="cont_pesq">
                     <h2>
                         Orçamento</h2>
-                    <table border="0" cellpadding="0" cellspacing="1" width="500px">
+                    <table border="0" cellpadding="0" cellspacing="1" width="600px">
                         <tr>
                             <td colspan="2">
                                 <asp:Label ID="lblMensagem" runat="server" CssClass="mensagem-vermelho" Visible="False"></asp:Label>
@@ -20,9 +20,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="left" colspan="2">
+                            <td align="left">
                                 <asp:Label CssClass="labeltitulo" ID="lblProjeto" runat="server" Text="Projeto:"></asp:Label>
-                                <br />
+                            </td>
+                            <td align="left">
                                 <asp:DropDownList runat="server" ID="ddlProjeto">
                                 </asp:DropDownList>
                                 <asp:RangeValidator ID="rgvProjeto" runat="server" ControlToValidate="ddlProjeto"
@@ -32,9 +33,10 @@
                             </td>
                         </tr>
                         <tr runat="server" id="trArea" visible="false">
-                            <td align="left" colspan="2">
+                            <td align="left">
                                 <asp:Label CssClass="labeltitulo" ID="lblArea" runat="server" Text="Area:"></asp:Label>
-                                <br />
+                            </td>
+                            <td align="left">
                                 <asp:DropDownList runat="server" ID="ddlArea">
                                 </asp:DropDownList>
                                 <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="ddlArea"
@@ -44,9 +46,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="left" colspan="2">
+                            <td align="left">
                                 <asp:Label CssClass="labeltitulo" ID="lblCategoria" runat="server" Text="Categoria:"></asp:Label>
-                                <br />
+                            </td>
+                            <td align="left">
                                 <asp:DropDownList runat="server" ID="ddlCategoria" AutoPostBack="True" OnSelectedIndexChanged="ddlCategoria_SelectedIndexChanged">
                                 </asp:DropDownList>
                                 <asp:RangeValidator ID="rgvCategoria" runat="server" ControlToValidate="ddlCategoria"
@@ -56,73 +59,85 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="left" colspan="2">
-                                <asp:Label CssClass="labeltitulo" ID="lblDtNecessidade" runat="server" Text="Data Necessidade:"></asp:Label>
-                                <br />
-                                <uc1:ucDataField ID="dtNecessidade" runat="server" ExibeCalendario="True" Required="True"
-                                    ValidationGroup="Salvar" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="left" colspan="2">
+                            <td align="left">
                                 <asp:Label ID="lbl_Item" runat="server" CssClass="labeltitulo" Text="Item:"></asp:Label>
-                                <br />
+                            </td>
+                            <td align="left">
                                 <asp:Label ID="lblErroItem" runat="server" CssClass="mensagem-vermelho" Visible="False"></asp:Label>
                                 <asp:DropDownList ID="ddlItem" runat="server" AutoPostBack="True" Enabled="False"
                                     OnSelectedIndexChanged="ddlItem_SelectedIndexChanged" Visible="true">
                                 </asp:DropDownList>
                             </td>
                         </tr>
+                        </tr>
                         <tr>
-                            <td align="left" colspan="2">
+                            <td>
+                                <asp:Label CssClass="labeltitulo" ID="lblOutros" runat="server" Text="Outros:" Visible="false"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="txtOutros" runat="server" MaxLength="2000" Rows="10" TextMode="MultiLine"
+                                    Visible="false" Width="90%"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr id="trdesc" runat="server" visible="false">
+                            <td class="gridnormal" style="width: 115px">
+                                <asp:Label ID="lblDescricao" runat="server" CssClass="labeltitulo" Text="Descrição:"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="txtDesc" runat="server" CssClass="textboxes" MaxLength="2000" Rows="10"
+                                    TextMode="MultiLine" Width="90%"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
                                 <asp:Label CssClass="labeltitulo" ID="Label1" runat="server" Text="Unidade Medida:"></asp:Label>
-                                <br />
+                            </td>
+                            <td align="left">
                                 <asp:Label ID="Label3" runat="server" CssClass="mensagem-vermelho" Visible="False"></asp:Label>
                                 <asp:DropDownList Visible="true" runat="server" ID="ddlUnidadeMedida">
                                 </asp:DropDownList>
                             </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" valign="top">
-                                <asp:Label CssClass="labeltitulo" ID="lblOutros" runat="server" Text="Outros:" Visible="false"></asp:Label>
-                                <asp:TextBox ID="txtOutros" runat="server" MaxLength="2000" Rows="10" TextMode="MultiLine"
-                                    Visible="false" Width="300px"></asp:TextBox>
-                            </td>
-                            <tr id="trdesc" runat="server" visible="false">
-                                <td class="gridnormal" style="width: 115px">
-                                    <asp:Label ID="lblDescricao" runat="server" CssClass="labeltitulo" Text="Descrição:"></asp:Label>
+                            <tr>
+                                <td align="left">
+                                    <asp:Label CssClass="labeltitulo" ID="lblDtNecessidade" runat="server" Text="Data Necessidade:"></asp:Label>
                                 </td>
-                                <td style="width: 300px">
-                                    <asp:TextBox ID="txtDesc" runat="server" CssClass="textboxes" MaxLength="2000" Rows="10"
-                                        TextMode="MultiLine" Width="300px"></asp:TextBox>
+                                <td align="left">
+                                    <uc1:ucDataField ID="dtNecessidade" runat="server" ExibeCalendario="True" Required="True"
+                                        ValidationGroup="Salvar" AutoPostBack="False" />
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    
                                     <asp:Label ID="lblErroQuantidade" runat="server" CssClass="mensagem-vermelho" Visible="False"></asp:Label>
                                 </td>
                             </tr>
                             <tr>
-                                <td align="left" style="width: 115px;">
+                                <td>
                                     <asp:Label ID="lblQuantidade" runat="server" CssClass="labeltitulo" Text="Quantidade:"></asp:Label>
-                                    <br>
+                                </td>
+                                <td>
                                     <asp:TextBox ID="txtQuantidade" runat="server" CssClass="numero" datatype="integer"
                                         MaxLength="4"></asp:TextBox>
-                                        <asp:RequiredFieldValidator ID="rfvQuantidade" runat="server" ControlToValidate="txtQuantidade"
+                                    <asp:RequiredFieldValidator ID="rfvQuantidade" runat="server" ControlToValidate="txtQuantidade"
                                         CssClass="mensagem-vermelho" Display="Dynamic" ErrorMessage="Preencha a quantidade desejada!"
                                         ForeColor="" SetFocusOnError="True" ValidationGroup="Salvar">*</asp:RequiredFieldValidator>
                                 </td>
-                                <td align="right" style="width: 300px">
-                                    <asp:ImageButton ID="btnAddItem" runat="server" ImageUrl="~/library/img/btnAdicionar.png"
-                                        OnClick="btnAddItem_Click" ValidationGroup="Salvar" />
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Label ID="lblFinalidade" runat="server" CssClass="labeltitulo" Text="Finalidade:"></asp:Label>
+                                </td>
+                                <td>
+                                    <asp:TextBox ID="txtFinalidade" runat="server" MaxLength="2000" Rows="10" Width="90%"
+                                        TextMode="MultiLine"></asp:TextBox>
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="2">
+                                    <asp:ImageButton ID="btnAddItem" runat="server" ImageUrl="~/library/img/btnAdicionar.png"
+                                        OnClick="btnAddItem_Click" ValidationGroup="Salvar" />
                                 </td>
                             </tr>
-                        </tr>
                     </table>
                 </div>
             </div>

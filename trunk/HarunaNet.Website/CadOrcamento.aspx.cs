@@ -76,8 +76,6 @@ namespace HarunaNet.SisWeb
                         ListaOrcamento = new List<PedidosOrcamentos>();
                     }
 
-
-
                     Projetos oProd = new Projetos();
                     oProd.ProjetoID = Convert.ToInt32(ddlProjeto.SelectedValue);
                     oProd.Nome = ddlProjeto.SelectedItem.ToString();
@@ -111,7 +109,7 @@ namespace HarunaNet.SisWeb
                     ItemOrcamento.Quantidade = Convert.ToInt32(txtQuantidade.Text);
                     ItemOrcamento.DataNecessidade = Convert.ToDateTime(dtNecessidade.Text);
 
-                    ItemOrcamento.UsuarioPedido = ((Usuario)Session["USUARIO"]).UsuarioId;
+                    ItemOrcamento.UsuarioPedido.UsuarioId = ((Usuario)Session["USUARIO"]).UsuarioId;
 
                     if (txtOutros.Text.ToString() != string.Empty)
                     {

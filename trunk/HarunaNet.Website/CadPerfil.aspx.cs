@@ -21,9 +21,6 @@ namespace HarunaNet.SisWeb
             if (!IsPostBack)
             {
                 ViewState.Add("CodigoPerfil", "0");
-
-
-
             }
         }
 
@@ -42,6 +39,12 @@ namespace HarunaNet.SisWeb
             {
                 (e.Row.FindControl("chkPermissaoModulo") as CheckBox).Checked = (e.Row.DataItem as Modulo).PodeAcessar.Equals(1);
             }
+        }
+
+        protected void gvModulosPerfil_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gvModulosPerfil.PageIndex = e.NewPageIndex;
+            ExibirDadosPerfil(hdfIdPerfil.Value);
         }
 
         private void SalvarDadosPerfil()
@@ -156,8 +159,8 @@ namespace HarunaNet.SisWeb
 
         protected void btnEditarPerfil_Click(object sender, EventArgs e)
         {
-            string id = gvCadPerfil.DataKeys[Int32.Parse((sender as ImageButton).CommandArgument)].Value.ToString();
-            ExibirDadosPerfil(id);
+            hdfIdPerfil.Value = gvCadPerfil.DataKeys[Int32.Parse((sender as ImageButton).CommandArgument)].Value.ToString();
+            ExibirDadosPerfil(hdfIdPerfil.Value);
         }
 
         protected void btnExcluirPerfil_Click(object sender, EventArgs e)
