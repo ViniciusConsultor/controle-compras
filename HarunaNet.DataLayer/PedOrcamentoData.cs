@@ -46,7 +46,11 @@ namespace HarunaNet.DataLayer
                 this.m_db.AddInParameter(dbCommand, "@COD_PROJETO", DbType.Int32, pedidoOcarmento.Projeto.ProjetoID);
                 this.m_db.AddInParameter(dbCommand, "@NUM_QUANTIDADE", DbType.Int32, pedidoOcarmento.Quantidade);
                 this.m_db.AddInParameter(dbCommand, "@DAT_NECESSIDADE", DbType.DateTime, pedidoOcarmento.DataNecessidade);
-                this.m_db.AddInParameter(dbCommand, "@USUARIOID_PEDIDO", DbType.Int32, pedidoOcarmento.UsuarioPedido);	
+                this.m_db.AddInParameter(dbCommand, "@USUARIOID_PEDIDO", DbType.Int32, pedidoOcarmento.UsuarioPedido.UsuarioId);
+                this.m_db.AddInParameter(dbCommand, "@FINALIDADE", DbType.String, pedidoOcarmento.Finalidade);
+                this.m_db.AddInParameter(dbCommand, "@GRUPO_ID", DbType.Int32, pedidoOcarmento.Area.ID);
+                this.m_db.AddInParameter(dbCommand, "@OUTROS", DbType.String, Consts.Funcoes.NullOrString(pedidoOcarmento.Outros));
+                this.m_db.AddInParameter(dbCommand, "@DESCRICAO", DbType.String, Consts.Funcoes.NullOrString(pedidoOcarmento.Descricao));
                 resultado.Id = Convert.ToInt32(this.m_db.ExecuteScalar(dbCommand));
                 resultado.Sucesso = (resultado.Id > 0);
 
@@ -63,29 +67,65 @@ namespace HarunaNet.DataLayer
             return resultado;
         }
 
-        public List<Orcamentos> Listar()
+        public List<PedidosOrcamentos> Listar()
         {
 
-            DbCommand dbc = this.m_db.GetStoredProcCommand("dbo.SP_PEDIDOS_PESQUISA");
+            DbCommand dbc = this.m_db.GetStoredProcCommand("dbo.SPR_PEDORCAMENTO_LISTSAR");
             //this.m_db.AddInParameter(dbc, "@USUARIO_ID", DbType.String, usuarioId);
 
-            List<Orcamentos> Lista = new List<Orcamentos>();
+            List<PedidosOrcamentos> Lista = new List<PedidosOrcamentos>();
 
             using (IDataReader readerUsuario = this.m_db.ExecuteReader(dbc))
             {
                 while (readerUsuario.Read())
                 {
-                    //MeusPedidos oPedido = new MeusPedidos();
-                    //oPedido.PedidoID = Conversion.preencheCampoInt(readerUsuario["COD_PEDIDO"]);
-                    //oPedido.DataPedido = Conversion.preencheCampoDateTime(readerUsuario["DAT_PEDIDO"]);
-                    //oPedido.NomeUsuario = Conversion.preencheCampoString(readerUsuario["NOME"]);
-                    //oPedido.Status = Conversion.preencheCampoInt(readerUsuario["NUM_STATUS"]);
-                    //listaPedido.Add(oPedido);
+                    PedidosOrcamentos pedidosOrcamentos = new PedidosOrcamentos();
+                    pedidosOrcamentos.Cod_PedidosOrcamentos = Conversion.preencheCampoInt(readerUsuario["COD_PEDIDOSORCAMENTOS"]);
+                    pedidosOrcamentos.Item = new ItemData().Seleciona(Conversion.preencheCampoInt(readerUsuario["COD_ITEM"]));
+                    pedidosOrcamentos.UnidadeMedida = new UnidadeMedidaData().Obter(Conversion.preencheCampoInt(readerUsuario["COD_UNIDADEMEDIDA"]));
+                    pedidosOrcamentos.Projeto = new ProjetosData().Obter(Conversion.preencheCampoInt(readerUsuario["COD_PROJETO"]));
+                    pedidosOrcamentos.Quantidade = Conversion.preencheCampoDecimal(readerUsuario["NUM_QUANTIDADE"]);
+                    pedidosOrcamentos.DataNecessidade = Conversion.preencheCampoDateTime(readerUsuario["DAT_NECESSIDADE"]);
+                    pedidosOrcamentos.UsuarioPedido = new UsuarioData().GetByID(Conversion.preencheCampoInt(readerUsuario["USUARIOID_PEDIDO"]));
+                    pedidosOrcamentos.Data_PedidoOrcamento = Conversion.preencheCampoDateTime(readerUsuario["DAT_PEDIDOORCAMENTO"]);
+                    pedidosOrcamentos.Status = Conversion.preencheCampoInt(readerUsuario["STATUS"]);
+                    pedidosOrcamentos.Area = new GrupoData().Obter(Conversion.preencheCampoInt(readerUsuario["GRUPO_ID"]));
+                    pedidosOrcamentos.Outros = Conversion.preencheCampoString(readerUsuario["DSC_OUTROS"]);
+                    pedidosOrcamentos.Descricao = Conversion.preencheCampoString(readerUsuario["DSC_DESCRICAO"]);
+                    Lista.Add(pedidosOrcamentos);
                 }
                 readerUsuario.Dispose();
             }
             return Lista;
         }
 
+
+        public PedidosOrcamentos Obter(int IdPedidosOrcamento)
+        {
+            DbCommand dbc = this.m_db.GetStoredProcCommand("dbo.SPR_ORCAMENTO_OBTER");
+            this.m_db.AddInParameter(dbc, "@IdPedidosOrcamentos", DbType.Int32, IdPedidosOrcamento);
+            PedidosOrcamentos pedidosOrcamentos = new PedidosOrcamentos();
+            using (IDataReader Reader = this.m_db.ExecuteReader(dbc))
+            {
+                if (Reader.Read())
+                {
+                    pedidosOrcamentos.Cod_PedidosOrcamentos = Conversion.preencheCampoInt(Reader["COD_PEDIDOSORCAMENTOS"]);
+                    pedidosOrcamentos.Item = new ItemData().Seleciona(Conversion.preencheCampoInt(Reader["COD_ITEM"]));
+                    pedidosOrcamentos.UnidadeMedida = new UnidadeMedidaData().Obter(Conversion.preencheCampoInt(Reader["COD_UNIDADEMEDIDA"]));
+                    pedidosOrcamentos.Projeto = new ProjetosData().Obter(Conversion.preencheCampoInt(Reader["COD_PROJETO"]));
+                    pedidosOrcamentos.Quantidade = Conversion.preencheCampoDecimal(Reader["NUM_QUANTIDADE"]);
+                    pedidosOrcamentos.DataNecessidade = Conversion.preencheCampoDateTime(Reader["DAT_NECESSIDADE"]);
+                    pedidosOrcamentos.UsuarioPedido = new UsuarioData().GetByID(Conversion.preencheCampoInt(Reader["USUARIOID_PEDIDO"]));
+                    pedidosOrcamentos.Data_PedidoOrcamento = Conversion.preencheCampoDateTime(Reader["DAT_PEDIDOORCAMENTO"]);
+                    pedidosOrcamentos.Status = Conversion.preencheCampoInt(Reader["STATUS"]);
+                    pedidosOrcamentos.Area = new GrupoData().Obter(Conversion.preencheCampoInt(Reader["GRUPO_ID"]));
+                    pedidosOrcamentos.Outros = Conversion.preencheCampoString(Reader["DSC_OUTROS"]);
+                    pedidosOrcamentos.Descricao = Conversion.preencheCampoString(Reader["DSC_DESCRICAO"]);
+
+                }
+                Reader.Dispose();
+            }
+            return pedidosOrcamentos;
+        }
     }
 }

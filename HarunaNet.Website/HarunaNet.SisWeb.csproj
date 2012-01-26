@@ -110,6 +110,8 @@
     <Content Include="Cad_Itens.aspx" />
     <Content Include="CadOrcamento.aspx" />
     <Content Include="Cad_Areas.aspx" />
+    <Content Include="PedidosOrcamentoEdit.aspx" />
+    <Content Include="PedidosOrcamentoLista.aspx" />
     <Content Include="css\estilo.css" />
     <Content Include="css\jqModal.css" />
     <Content Include="css\st.css" />
@@ -254,6 +256,20 @@
     </Compile>
     <Compile Include="Cad_Areas.aspx.designer.cs">
       <DependentUpon>Cad_Areas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PedidosOrcamentoEdit.aspx.cs">
+      <DependentUpon>PedidosOrcamentoEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PedidosOrcamentoEdit.aspx.designer.cs">
+      <DependentUpon>PedidosOrcamentoEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PedidosOrcamentoLista.aspx.cs">
+      <DependentUpon>PedidosOrcamentoLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PedidosOrcamentoLista.aspx.designer.cs">
+      <DependentUpon>PedidosOrcamentoLista.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>

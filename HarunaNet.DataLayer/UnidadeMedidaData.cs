@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Data;
-using System.Data.SqlClient;
 using System.Data.Common;
 
 using Microsoft.Practices.EnterpriseLibrary.Data;
@@ -11,9 +9,9 @@ using HarunaNet.Framework.Utils;
 
 namespace HarunaNet.DataLayer
 {
-    public  class UnidadeMedidaData
+    public class UnidadeMedidaData
     {
-         #region Atributos
+        #region Atributos
         private Database m_db;
         #endregion
 
@@ -48,6 +46,24 @@ namespace HarunaNet.DataLayer
             }
             return Lista;
 
+        }
+
+        public UnidadeMedida Obter(Int32 IdunidadeMedida)
+        {
+            DbCommand dbc = this.m_db.GetStoredProcCommand("dbo.SPR_UNIDADEMEDIDA_OBTER");
+            this.m_db.AddInParameter(dbc, "@COD_UNIDADEMEDIDA", DbType.Int32, IdunidadeMedida);
+            UnidadeMedida unidadeMedida = null;
+            using (IDataReader readerProjetos = this.m_db.ExecuteReader(dbc))
+            {
+                if (readerProjetos.Read())
+                {
+                    unidadeMedida = new UnidadeMedida();
+                    unidadeMedida.Id = Conversion.preencheCampoInt(readerProjetos["COD_UNIDADEMEDIDA"]);
+                    unidadeMedida.Nome = Conversion.preencheCampoString(readerProjetos["NOM_COMPLETO"]);
+                    unidadeMedida.NomeAbreviado = Conversion.preencheCampoString(readerProjetos["NOM_ABREVIADO"]);
+                }
+            }
+            return unidadeMedida;
         }
     }
 }

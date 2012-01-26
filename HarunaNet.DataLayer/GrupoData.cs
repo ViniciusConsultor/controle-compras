@@ -104,7 +104,7 @@ namespace HarunaNet.DataLayer
             return resultado;
         }
 
-        public Grupo Obeter(int ID)
+        public Grupo Obter(int ID)
         {
             DbCommand dbc = this.m_db.GetStoredProcCommand("dbo.SPR_GRUPO_LISTA");
             this.m_db.AddInParameter(dbc, "@ID", DbType.Int32, ID);

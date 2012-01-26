@@ -6,6 +6,7 @@ using System.ComponentModel;
 
 namespace HarunaNet.Entities
 {
+    [Serializable()]
     [DataContract(Namespace = "HarunaNet.Entities")]
     public class Perfil
     {

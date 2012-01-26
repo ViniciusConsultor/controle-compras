@@ -62,6 +62,7 @@
                     <span>Cadastro de Perfis de Usuário</span>
                 </div>
                 <fieldset>
+                    <asp:HiddenField ID="hdfIdPerfil" runat="server" />
                     <span class="textotitulos">Código:</span><br />
                     <asp:TextBox runat="server" ID="tbxCodigoPerfil" ReadOnly="true" CssClass="textboxes"></asp:TextBox><br />
                     <span class="textotitulos">Descrição</span><br />
@@ -75,7 +76,7 @@
                     <span>Módulos que este perfil pode acessar</span>
                 </div>
                 <asp:GridView runat="server" ID="gvModulosPerfil" AutoGenerateColumns="false" OnRowDataBound="gvModulosPerfil_RowDataBound"
-                    Width="100%">
+                   AllowPaging="true" PageSize="15" OnPageIndexChanging="gvModulosPerfil_PageIndexChanging" Width="100%">
                     <HeaderStyle CssClass="gridheader" />
                     <RowStyle CssClass="gridnormal" />
                     <Columns>

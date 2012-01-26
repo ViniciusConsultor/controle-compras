@@ -1,0 +1,58 @@
+﻿/*Calendario Extender Properties*/
+
+
+.Calendario .ajax__calendar_container   {
+    background-color: #e2e2e2;
+    border:solid 1px #cccccc;
+    z-index: 10001;
+}
+
+.Calendario .ajax__calendar_header  {
+    background-color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.Calendario .ajax__calendar_title,
+.Calendario .ajax__calendar_next,
+.Calendario .ajax__calendar_prev    {
+    color: #004080;
+    padding-top: 3px;
+}
+
+.Calendario .ajax__calendar_body    {
+    background-color: #e9e9e9;
+    border: solid 1px #cccccc;
+    z-index: 10001;
+}
+
+
+
+.Calendario .ajax__calendar_dayname {
+    text-align:center;
+    font-weight:bold;
+    margin-bottom: 4px;
+    margin-top: 2px;
+}
+
+.Calendario .ajax__calendar_day {
+    text-align:center;
+}
+
+.Calendario .ajax__calendar_hover .ajax__calendar_day,
+.Calendario .ajax__calendar_hover .ajax__calendar_month,
+.Calendario .ajax__calendar_hover .ajax__calendar_year,
+.Calendario .ajax__calendar_active  {
+    color: #004080;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+.Calendario .ajax__calendar_today   {
+    font-weight:bold;
+}
+
+.Calendario .ajax__calendar_other,
+.Calendario .ajax__calendar_hover .ajax__calendar_today,
+.Calendario .ajax__calendar_hover .ajax__calendar_title {
+    color: #bbbbbb;
+}
