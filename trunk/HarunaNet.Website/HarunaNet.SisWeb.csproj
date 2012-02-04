@@ -110,6 +110,11 @@
     <Content Include="Cad_Itens.aspx" />
     <Content Include="CadOrcamento.aspx" />
     <Content Include="Cad_Areas.aspx" />
+    <Content Include="library\img\btnAdd.png" />
+    <Content Include="library\img\btnCancelar2.png" />
+    <Content Include="library\img\btnPesquisar.png" />
+    <Content Include="library\img\btnVoltar.png" />
+    <Content Include="library\img\btn_cancelar_1.png" />
     <Content Include="PedidosOrcamentoEdit.aspx" />
     <Content Include="PedidosOrcamentoLista.aspx" />
     <Content Include="css\estilo.css" />
@@ -193,6 +198,7 @@
     <Content Include="PedidosCadastro.aspx" />
     <Content Include="PedidosLista.aspx" />
     <Content Include="PedidosListaItem.aspx" />
+    <Content Include="MasterPopUp.master" />
     <None Include="Properties\DataSources\HarunaNet.Entities.Resultado.datasource" />
     <None Include="Properties\DataSources\HarunaNet.Entities.Usuario.datasource" />
     <None Include="Properties\Settings.settings">
@@ -256,6 +262,13 @@
     </Compile>
     <Compile Include="Cad_Areas.aspx.designer.cs">
       <DependentUpon>Cad_Areas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPopUp.master.cs">
+      <DependentUpon>MasterPopUp.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPopUp.master.designer.cs">
+      <DependentUpon>MasterPopUp.master</DependentUpon>
     </Compile>
     <Compile Include="PedidosOrcamentoEdit.aspx.cs">
       <DependentUpon>PedidosOrcamentoEdit.aspx</DependentUpon>
