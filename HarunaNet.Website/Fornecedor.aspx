@@ -65,6 +65,13 @@
                             </ItemTemplate>
                             <ItemStyle HorizontalAlign="Center"></ItemStyle>
                         </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Selecionar" Visible="False">
+                        <ItemStyle HorizontalAlign="Center" Width="50px" />
+                        <ItemTemplate>
+                            <asp:ImageButton ID="imgSelecionar" runat="server" CausesValidation="false" CommandName="Selecionar"
+                                ImageUrl="~/library/img/btnSelecionar.png" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
                     </Columns>
                 </asp:GridView>
             </div>

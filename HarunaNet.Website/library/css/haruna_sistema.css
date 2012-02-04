@@ -54,8 +54,8 @@ h2
 .header
 {
     height: 90px;
-    width: 760px;
-    margin: 20px auto 80px auto;
+    
+    margin: 20px  50px 80px 50px;
     text-align: left;
 }
 
@@ -110,7 +110,7 @@ h2
     margin: -4px auto;
     color: White;
     font-weight: bold;
-    width: 760px;
+    /*width: 760px;*/
 }
 
 .loginDisplay
@@ -148,9 +148,8 @@ h2
 }
 .cont_pesq
 {
-    margin: 10px auto 5px auto;
+    margin: 10px auto 5px 50px;
     text-align: left;
-    width: 750px;
 }
 
 #resultado
@@ -160,9 +159,8 @@ h2
 
 .result_pesq
 {
-    margin: 10px auto 5px auto;
+    margin: 10px auto 5px 50px;
     text-align: left;
-    width: 760px;
 }
 
 
@@ -5001,13 +4999,43 @@ ul.dx
 	padding: 5px;
 	margin: 5px;
 }
-.dxfmControl_haruna.dxfm-rtl .dxfm-file 
-{
-	float: right;
 }
 .dxfmDisabled_haruna .dxfm-file
 {
 	cursor: default;
+}
+
+
+.titulo
+{
+    background-color: #da251d;
+    color: #fff;
+    font-weight: bold;
+    line-height: 20px;
+    width: 100%;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dxfmControl_haruna .dxfm-fileSI
+{
+	border: dotted 1px #888888;
 }
 
 

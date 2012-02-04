@@ -2467,6 +2467,28 @@ function sonumeros(fld, e) {
 
 }
 
+function PontoeNumeros(e) {
+
+    if (document.all) // Internet Explorer
+        var tecla = event.keyCode;
+    else if (document.layers) // Nestcape
+        var tecla = e.which;
+
+    if (tecla > 47 && tecla < 58) // numeros de 0 a 9
+
+    // if (tecla < 47 || tecla > 58) // letras de A a Z
+        return true;
+
+    else {
+
+        if (tecla != 8 && tecla != 13 && tecla != 44 && tecla != 46) // backspace
+            event.keyCode = 0; //return false;
+        else
+            return true;
+
+        alert("Digite somente numeros");
+    }
+}
 
 function currencyFormat(fld, milSep, decSep, e) {
     var sep = 0;

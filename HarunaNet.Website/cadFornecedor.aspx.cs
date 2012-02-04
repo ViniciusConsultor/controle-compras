@@ -8,16 +8,28 @@ namespace HarunaNet.SisWeb
 {
     public partial class cadFornecedor : PaginaBase
     {
+
+        protected void Page_PreInit(object sender, EventArgs e)
+        {
+            if (Request.QueryString["PopUp"] == "PopUp")
+            {
+                this.MasterPageFile = "~/MasterPopUp.Master";
+            }
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                Resultado resultado = new Resultado();
-                int FornecedorID = Convert.ToInt32(Request.QueryString["id"]);
-                HarunaNet.Entities.Fornecedor oFornecedor = new FornecedorFacade().Obter(ref resultado, FornecedorID);
-                if (oFornecedor.FornecedorID >= 0)
+                if (this.Master.GetType().BaseType.Name != "PopUp")
                 {
-                    ObterDados(oFornecedor);
+                    Resultado resultado = new Resultado();
+                    int FornecedorID = Convert.ToInt32(Request.QueryString["id"]);
+                    HarunaNet.Entities.Fornecedor oFornecedor = new FornecedorFacade().Obter(ref resultado, FornecedorID);
+                    if (oFornecedor.FornecedorID >= 0)
+                    {
+                        ObterDados(oFornecedor);
+                    }
                 }
             }
         }
